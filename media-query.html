@@ -1,0 +1,70 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <style>
+      .px {
+        font-size: 20px;
+        width: 450px;
+        background-color: #aaa;
+      }
+
+      @media only screen and (max-width:1200px){
+        .rem1{
+          background-color:grey;
+          font-size: 28px;
+        }
+      }
+
+      @media only screen and (max-width:700px){
+        .rem1{
+          background-color:green;
+          font-size: 14px;
+        }
+      }
+
+      @media only screen and (max-width:400px){
+        .rem1{
+          background-color:red;
+          font-size: 20px;
+        }
+      }
+
+      /* Extra small devices (phones, 600px and down) */
+      @media (max-width: 600px) {...}
+
+      /* Small devices (portrait tablets and large phones, 600px and up) */
+      @media (min-width: 600px) {...}
+
+      /* Medium devices (landscape tablets, 768px and up) */
+      @media (min-width: 768px) {...}
+
+      /* Large devices (laptops/desktops, 992px and up) */
+      @media (min-width: 992px) {...}
+
+      /* Extra large devices (large laptops and desktops, 1200px and up) */
+      @media (min-width: 1200px) {...}
+
+    </style>
+  </head>
+  <body>
+    <h2>Media Query</h2>
+    <div class="container">
+      <!-- desktop first approch -->
+      <!-- //Media Query -->
+      <!-- 0-600px:      Phone
+      600-900px:    Tablate portal
+      900-1200px:   Tablate landscape
+      [1200-1800]:  Normal style
+      1800px+       Big desktop -->
+
+      <div class="rem1">
+        rem - relative to the font size of root(1rem=16px) - ANY ONE CHANGE THE
+        BROWSER SETTING IT WILL ALSO CHANGE BASE ON THE PASSING, MARGING AND
+        RESPONSIVE. GOOD TO USE, The rem value is based on the root element
+        (html)
+      </div>
+      </div>
+    </div>
+    <h3>Order of prefrence is matter if there is conflict like in 600 and 700</h3>
+  </body>
+</html>

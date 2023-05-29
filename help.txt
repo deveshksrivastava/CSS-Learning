@@ -1,0 +1,49 @@
+how to make logo left and links right?
+  CSS.
+    #header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    HTML.
+        <div id="header">
+          <section>Logo</section>   1 type, make left
+          <section id="flexed-nav"> 2 type, make right
+            <a>Link 1</a>
+            <a>Link 2</a>
+            <a>Link 3</a>
+          </section>
+        </div>
+
+    
+How to make it center when use Flex?
+    Set both the justify-content and align-items properties to center!!!
+    CSS.
+    .flex-container {
+          display: flex;
+          height: 300px;
+          justify-content: center;
+          align-items: center;
+    }
+    HTML.
+    <div class="flex-container">
+      <div></div>
+    </div>
+
+
+HOW TO USE THE NEXT, CHILD * > NEXT ETC 
+  https://www.w3schools.com/cssref/css_selectors.php
+
+SHORTCUT - 
+border: 3px solid #1C6EA4; solid/dass
+margin: 25px 50px 75px 100px;
+      top margin is 25px
+      right margin is 50px
+      bottom margin is 75px
+      left margin is 100px
+      **** margin: 25px 50px;****
+          top and bottom margins are 25px
+          right and left margins are 50px
+      **** margin: 50px auto 0;****       
+
+

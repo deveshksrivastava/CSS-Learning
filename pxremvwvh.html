@@ -1,0 +1,111 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <style>
+      .px {
+        font-size: 20px;
+        width: 450px;
+        background-color: #aaa;
+      }
+
+      .percentage {
+        width: 50%;
+        background-color: #ddd;
+      }
+
+      .rem {
+        font-size: 1.2rem;
+        background-color: #ddd;
+      }
+
+      .em {
+        font-size: 1.5em;
+        background-color: yellow;
+      }
+
+      .vh {
+        height: 20vh;
+        background-color: red;
+      }
+
+      .vw {
+        width: 50vw;
+        background-color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>px/%/rem,vm,vh,%</h2>
+    <br />
+    <p>Absolute :px</p>
+    <p>Relative :rem,vm,vh,%</p>
+    <div class="container">
+      <h3>ABSOLUTE</h3>
+      <div class="px">PIXILE</div>
+      <div class="percentage">PIRCENTAGE(%)</div>
+      <h3>RELATIVE</h3>
+      <div class="rem">
+        rem - relative to the font size of root(1rem=16px) - ANY ONE CHANGE THE
+        BROWSER SETTING IT WILL ALSO CHANGE BASE ON THE PASSING, MARGING AND
+        RESPONSIVE. GOOD TO USE, The rem value is based on the root element
+        (html), Its same as px but only diff is responsiveness
+      </div>
+      <!-- if html{ fontsize:10px}  .rem{ fotn-size:2rem (20px)} -->
+      <div class="em">
+        em- relative to font size of element ( LESS USED ), font size of the
+        element (e.g. 2.5em means the font is 2.5 times bigger than the normal
+        font), value based on the parent element
+      </div>
+      <div class="vw">vw- relative to the 1% of the width of viewport</div>
+      <div class="vh">vh- relative to the 1% of the height of viewport</div>
+      <div class="percent">
+        %- relative to the parent element - default is font 16px
+        (font-size100%), but the vm works on the full view
+      </div>
+    </div>
+  </body>
+</html>
+
+<!-- Roy Revelt -   font-size: 62.5%;
+ https://frontendfoc.us/issues/572
+
+
+12:14
+https://css-tricks.com/rems-ems/
+CSS-TricksCSS-Tricks
+Font Size Idea: px at the Root, rem for Components, em for Text Elements | CSS-Tricks
+Me, for the last year or so: "rem's are so cool! I'm gonna size everything with them, that way I can adjust the font-size on the root element and everything
+
+https://css-tricks.com/rems-ems/
+
+12:15
+/*
+1. Use a consistent sensible line-height in all browsers.
+2. Prevent adjustments of font size after orientation changes in iOS.
+3. Set 1rem = 10px.
+4. Use a more readable tab size.
+5. Use Tailwind fallback font stack.
+*/
+html {
+  line-height: 1.5;
+  -webkit-text-size-adjust: 100%;
+  font-size: 62.5%;
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+  font-family: "Outfit", "Inter", ui-sans-serif, system-ui, -apple-system,
+    BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans",
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    "Noto Color Emoji";
+}
+
+html {
+  /* 62.5% of 16px browser font size is 10px */
+  font-size: 62.5%;
+}
+
+.some-element {
+  font-size: 1.2rem;   /* 1.2 * 10px = 12px */
+}
+
+smiling_face_with_tear -->

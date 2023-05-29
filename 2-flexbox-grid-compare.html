@@ -1,0 +1,131 @@
+<!-- –––––––––––––––––TYPE 1–––––––––––––––––––––– -->
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <style>
+      /* FLEXBOX */
+      /* make in collumn wise */
+
+      header {
+        display: flex;
+      }
+
+      /* header > div:nth-child(3) {
+        /* nth-child(3) -this is logout */
+      /* margin-left: auto;
+      } */
+
+      /* GRID */
+
+      /* header {
+        display: grid;
+        grid-template-columns: repeat(10, 1fr);
+      }
+
+      header > div:nth-child(3) {
+        grid-column: 10;
+      } */
+    </style>
+  </head>
+  <body>
+    <h2>Flex box</h2>
+    <header>
+      <div>Home</div>
+      <div>Search</div>
+      <div>Logout</div>
+    </header>
+  </body>
+</html>
+<!-- –––––––––––––––––TYPE 2–––––––––––––––––––––– -->
+<html>
+  <head>
+    <style>
+      .container {
+        display: grid;
+        background-color: grey;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: 50px 350px 50px;
+      }
+      header {
+        display: flex; /* adding flexbox in grid to make header as colloum */
+        flex-direction: row; /*  flexbox*/
+        justify-content: center; /*  flexbox*/
+        align-items: center; /*  flexbox*/
+
+        grid-column: span 10;
+        border: 3px solid #1c6ea4;
+      }
+      aside {
+        grid-column: span 2;
+        border: 3px solid #1c6ea4;
+      }
+      main {
+        grid-column: span 10;
+        border: 3px solid #1c6ea4;
+      }
+      footer {
+        grid-column: span 12;
+        border: 3px solid #1c6ea4;
+      }
+      /* adding flexbox in grid to make header */
+      header > div:nth-child(3) {
+        margin-left: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Flex box</h2>
+
+    <p>
+      Flexbox is made for one dimensional layouts (like menu) and Grid is made
+      for two dimensional layouts(like menu, sidebar,main,footer) and
+    </p>
+    <p>
+      CSS Grid will give you more flexibility, make your markup simpler and the
+      code will be easier to maintain.
+    </p>
+    <!-- <header>
+      <div>Home</div>
+      <div>Search</div>
+      <div>Logout</div>
+    </header> -->
+    <h2>Grid+flexbox</h2>
+    <div class="container">
+      <header>
+        <div>Home</div>
+        <div>Search</div>
+        <div>Logout</div>
+      </header>
+      <aside>MENU</aside>
+      <main>CONTENT</main>
+      <footer>FOOTER</footer>
+    </div>
+  </body>
+</html>
+
+<!-- –––––––––––––––––TYPE 2–––––––––––––––––––––– -->
+<html>
+  <head>
+    <style>
+      .flex-parent {
+        display: flex;
+        border: 1px solid red;
+      }
+
+      .flex-parent div {
+        border: 1px solid blue;
+        flex-basis: 33%;
+        flex-shrink: 1;
+        flex-grow: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <br />
+    <div class="flex-parent">
+      <div>Columns1</div>
+      <div>Columns2</div>
+      <div>Columns3</div>
+    </div>
+  </body>
+</html>

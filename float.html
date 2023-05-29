@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      img {
+        float: right;
+        margin-right: 20px;
+        height: 190px;
+        width: 100px;
+      }
+
+      /* ******************************* */
+      .par1 {
+        float: right;
+      }
+
+      .div1 {
+        float: left;
+        padding: 10px;
+        border: 3px solid #73ad21;
+      }
+
+      .div2 {
+        padding: 50px;
+        border: 3px solid red;
+      }
+
+      .div3 {
+        float: left;
+        padding: 10px;
+        border: 3px solid #73ad21;
+      }
+
+      .div4 {
+        padding: 10px;
+        border: 3px solid red;
+        clear: both;
+      }
+      /* ******************************* */
+      .box1 {
+        float: left;
+        background-color: red;
+        width: 70px;
+        height: 70px;
+      }
+      .box2 {
+        float: right;
+        background-color: blue;
+        width: 170px;
+        height: 70px;
+      }
+      p {
+        clear: both;
+        padding: 10px;
+        border: 3px solid #73ad21;
+      }
+      .box3 {
+        float: left;
+        background-color: pink;
+        width: 70px;
+        height: 70px;
+        /* margin: 10px 10px 10px; */
+        border: 2px solid red;
+      }
+
+      .box4 {
+        float: left;
+        background-color: lightblue;
+        width: 70px;
+        height: 70px;
+        border: 2px solid blue;
+      }
+
+      .box5 {
+        float: right;
+        background-color: blue;
+        width: 70px;
+        height: 70px;
+        border: 2px solid green;
+      }
+      .box6 {
+        clear: both;
+        /* clear: left/right; */
+        background-color: pink;
+        width: 70px;
+        height: 70px;
+        border: 2px solid green;
+      }
+      .box7 {
+        background-color: red;
+        width: 70px;
+        height: 70px;
+        border: 2px solid green;
+      }
+      .box8 {
+        /* float: right; */
+        background-color: yellow;
+        width: 70px;
+        height: 70px;
+        border: 2px solid green;
+      }
+
+      /* -----------float help div to aligh side by side---------------- */
+      * {
+        padding: 0px;
+        margin: 0px;
+      }
+      h2 {
+        text-align: center;
+      }
+      .header {
+        background-color: gray;
+        width: 100%;
+        height: 60px;
+        /* //aligh center */
+        text-align: center;
+      }
+      .header-left {
+        float: left;
+        background-color: blue;
+        width: 20%;
+        height: 80%;
+      }
+      .header-right {
+        float: right;
+        background-color: red;
+        width: 80%;
+        height: 80%;
+      }
+      .main {
+        background-color: yellow;
+        width: 100%;
+        height: 270px;
+      }
+      .footer {
+        background-color: green;
+        width: 100%;
+        height: 70px;
+      }
+
+      .color {
+        height: 30px;
+        width: 40px;
+        background-color: red;
+        border-color: pink;
+        display: inline-block;
+      }
+      a {
+        /* inline block space - maring dont work on the inline to fix we need */
+        display: inline-block;
+        margin-bottom: 130px;
+      }
+
+      /* **********header-start0******************* */
+      .container {
+        width: 100%;
+        /* height: 300px; */
+        margin: 0 auto;
+        background-color: pink;
+      }
+
+      .main-header {
+        background-color: grey;
+        padding: 20px 30px;
+        margin-bottom: 50px;
+        height: 50px;
+      }
+
+      nav {
+        font-size: 20px;
+        text-align: center;
+        float: right;
+      }
+
+      h1 {
+        float: left;
+      }
+
+      .clear {
+        clear: both;
+      }
+
+      /* second way to clear */
+      /* .clear-fix::after {
+        clear: both;
+        content: '';
+        display: block;
+      } */
+
+      article {
+        background-color: red;
+        height: 240px;
+        float: left;
+        width: 84%;
+      }
+
+      /* box-sizing: border-box; */
+      /* The box-sizing property allows us to include the padding and border in an element's total width and height. */
+      aside {
+        background-color: grey;
+        float: right;
+        height: 140px;
+        width: 15%;
+        box-sizing: border-box;
+        padding: 50px;
+      }
+
+      footer {
+        background-color: black;
+        clear: both;
+        color: white;
+        height: 40px;
+      }
+      /* *************end0********************* */
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header class="main-header clear-fix">
+        <h1>The code header</h1>
+        <nav>
+          <a href="sdsd">Blog</a>
+          <a href="sdsd">Challenger</a>
+          <a href="sdsd">Flexbox</a>
+          <a href="sdsd">Css Grid</a>
+        </nav>
+        <div class="clear"></div>
+      </header>
+      <article>Article</article>
+      <aside>Aside</aside>
+      <footer>Footer</footer>
+    </div>
+
+    <hr />
+    <br />
+    <hr />
+    <!-- ********************************************** -->
+    <h2>Float</h2>
+    <div class="div1">div1</div>
+    <div class="div2">
+      div2 - Notice that div2 is after div1 in the HTML code. However, since
+      div1 floats to the left, the text in div2 flows around div1.
+    </div>
+    <br /><br />
+
+    <h2>With clear</h2>
+    <div class="div3">div3</div>
+    <div class="div4">
+      div4 - Here, clear: left; moves div4 down below the floating div3. The
+      value "left" clears elements floated to the left. You can also clear
+      "right" and "both".
+    </div>
+    <!-- ********************************************** -->
+    <hr />
+
+    <!-- ********************************************** -->
+    <div class="box1">box1</div>
+    <div class="box2">box2</div>
+    <div class="box3">box3</div>
+    <div class="box4">box4</div>
+    <div class="box5">box5</div>
+    <div class="box6">box6</div>
+    <div class="box7">box7</div>
+    <div class="box8">box8</div>
+    <div></div>
+    <hr />
+
+    <h2>Template page</h2>
+    <hr />
+    <div class="header">
+      <div class="header-left">header-left</div>
+      <div class="header-right">header-right</div>
+    </div>
+
+    <div class="main">main</div>
+    <div class="footer">footer</div>
+    <hr />
+    <!-- ********************************************** -->
+    <div>
+      <h3>Use of Inline Block to make in collumn</h3>
+      <a href="ssdsd"
+        >inline block space - maring dont work on the inline to fix we need
+        display: inline-block;
+      </a>
+      <div class="color color-blue"></div>
+      <div class="color color-red"></div>
+      <div class="color color-green"></div>
+      <div class="color color-yellow"></div>
+      <div class="color color-pink"></div>
+    </div>
+    <img
+      src="https://i.picsum.photos/id/0/5616/3744.jpg?hmac=3GAAioiQziMGEtLbfrdbcoenXoWAW-zlyEAMkfEdBzQ"
+      alt="Pineapple"
+      style="width: 170px; height: 70px; margin-left: 15px"
+    />
+  </body>
+</html>

@@ -1,0 +1,148 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <script src="script.js"></script> -->
+    <style>
+      li:first-child {
+        color: red;
+        font-weight:bold;
+      }
+      li:last-child {
+        color: blue;
+        font-weight:bold;
+      }
+
+      li:nth-child(3) {
+        color: lightgreen;
+        font-weight:bold;
+      }
+
+      li:nth-child(even) {
+        color: pink;
+        font-weight:bold;
+      }
+
+      article p:first-child {
+        color: blue;
+        font-weight:bold;
+      }
+    </style>
+  <body>
+    <h1 style="color:red">Psudocode</h1>
+    <div class="wrapper">Psudocode wrapper</div>
+    <article>
+      <p>MAJAM TOPIC</p>
+      <ui>
+        <li class="first-child">Position - static/relative/fixed/absolute/static</li>
+        <li>Float - left/right</li>
+      </ui>
+    </article>
+    <ui>
+      <hr/>
+      <ol>
+        <li class="first">Topic1</li>
+        <li>Topic2</li>
+        <li>Topic3</li>
+        <li>Topic4</li>
+        <li>Topic5</li>
+        <li>Topic6</li>
+        <li>Topic7</li>
+      </ol>
+      CSS Combinators
+      A combinator is something that explains the relationship between the selectors.
+
+      There are four different combinators in CSS:
+
+      descendant selector (space):  div p { ... }:-https://www.w3schools.com/css/tryit.asp?filename=trycss_sel_element_element
+      child selector (>)         :  div > p { } :- https://www.w3schools.com/css/tryit.asp?filename=trycss_sel_element_gt
+      adjacent sibling selector (+) : div > p { }  :-https://www.w3schools.com/css/tryit.asp?filename=trycss_sel_element_pluss
+      general sibling selector (~) : div ~ p { .. } :- https://www.w3schools.com/css/tryit.asp?filename=trycss_sel_element_tilde
+
+      What are Pseudo-classes?
+        Style an element when a user mouses over it
+        Style visited and unvisited links differently
+        Style an element when it gets focus
+
+        /* unvisited link */
+        a:link {
+          color: #FF0000;
+        }
+
+        /* visited link */
+        a:visited {
+          color: #00FF00;
+        }
+
+        /* mouse over link */
+        a:hover {
+          color: #FF00FF;
+        }
+
+        /* selected link */
+        a:active {
+          color: #0000FF;
+        }
+
+        a.highlight:hover {
+          color: #ff0000;
+          font-size: 22px;
+        } 
+        <p><a class="highlight" href="css_syntax.asp">CSS Syntax</a></p>
+        Hover on <div>. 
+        div:hover {
+            background-color: blue;
+        }
+
+        p:first-child { //https://www.w3schools.com/css/tryit.asp?filename=trycss_first-child1
+          color: blue;
+        }
+
+        A CSS pseudo-element is used to style specified parts of an element.
+
+        For example, it can be used to:
+
+        Style the first letter, or line, of an element
+        Insert content before, or after, the content of an element
+        
+        What are Pseudo-Elements?
+        p::first-line {
+          color: #ff0000;
+          font-variant: small-caps;
+        }
+
+        The following properties apply to the ::first-line pseudo-element:
+        p::first-letter
+        ::first-line
+        p.intro::first-letter
+        h1::before
+        h1::after
+        ::marker
+        ::selection
+
+        Selector	    Example	        Example description
+        ::after	      p::after	      Insert something after the content of each <p> element
+        ::before	    p::before	       Insert something before the content of each <p> element
+        ::first-letter p::first-letter Selects the first letter of each <p> element
+        ::first-line	 p::first-line	 Selects the first line of each <p> element
+        ::marker	     ::marker	       Selects the markers of list items
+        ::selection	   p::selection	   Selects the portion of an element that is selected by a user
+        :last-child	p:last-child	Selects every <p> elements that is the last child of its parent
+        :first-child	p:first-child	Selects every <p> elements that is the first child of its parent
+        :nth-child(n)	p:nth-child(2)	Selects every <p> element that is the second child of its parent
+
+        https://www.w3schools.com/css/css_pseudo_elements.asp
+        
+        font properties
+        color properties
+        background properties
+        word-spacing
+        letter-spacing
+        text-decoration
+        vertical-align
+        text-transform
+        line-height
+        clear
+
+
+  </body>
+</html>

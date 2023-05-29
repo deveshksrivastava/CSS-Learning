@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+
+      body{
+        position:relative
+      }
+      .parent {
+        position: relative; 
+        background-color: pink;
+        width: 190px;
+        height:40vh;
+        border: 2px solid red;
+      }
+
+      .child1 {
+        position: relative;
+        /* position: absolute; */
+        left:10px;
+        background-color: lightblue;
+        width: 170px;
+        height: 70px;
+        border: 2px solid blue;
+      }
+
+      .child2 {
+        /* position: absolute; */
+        /* position: fixed; */
+        position: sticky;
+        top:5px;
+        background-color: red;
+        width: 70px;
+        height: 70px;
+        border: 2px solid green;
+      }
+
+      button{
+        font-size:20px;
+        padding:20px;
+        cursor:pointer;
+
+        position:absolute;
+        /* top:250px;
+        left:310px; */
+        bottom:50px;
+        right:50px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Postion</h2>
+    <ui>
+      <li>Static<span>-> no effect on the top/bottom/left/right</span></li>
+      <li>Releative - have effect - remove from the flow - should not use child, use in parent</li>
+      <li>Fixed - have effect - this will always be fixed base on the pg</li>
+      <li>Absolute - used mostly for top/left/right/bottom, not used in parent</li>
+      <li>strict ->; is positioned based on the user's scroll position.</li>
+      <li>Note: parent is made as relative or static and the child will have absoulute postion to move according to the parent</li>
+    <ui>
+    <div class="parent">parent   
+       <div class="child1">child1</div>
+       <div class="child2">child2</div>
+      </div>
+
+    <h3>Making button to the right bottom</h3>
+    <h4>1. button make  position:absolute;  bottom:50px;  right:50px;</h4>
+    <h4>2. Make the body position:relative</h4>
+    <button>🧡Like</button>
+  </body>
+</html>

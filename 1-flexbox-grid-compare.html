@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSS Grid Layout</title>
+    <!-- https://www.youtube.com/watch?v=3elGSZSWTbM -->
+    <!-- FLEX BOX - https://www.w3schools.com/css/css3_flexbox.asp
+    GRID - https://www.w3schools.com/css/css_grid.asp -->
+
+    <style>
+      .flex-container {
+        background: grey;
+
+        display: flex; /* make default in row */
+        flex-direction: row; /* column will make horizontal */
+        flex-wrap: wrap; /* make row in next colomn */
+      }
+
+      .flex-container > * {
+        flex-grow: 1; /* fills up the spaces check when shriks */
+        flex-basis: 33%; /* makes 3 column, but last one always incorrect */
+      }
+
+      .grid-continer {
+        background: pink;
+
+        display: grid;
+        /* grid-auto-flow: column; make default in row "oposite to flexbox" */
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        /* remove grid-auto-flow or repeat(auto-fit, minmax(300px,1fr)); //make fix size*/
+      }
+
+      * > div {
+        border: 1px solid #ff0000;
+        /* padding: 0.2em; */
+      }
+
+      /* ****************************flexbox vs grid (header menu********************************* */
+      /* Grid Gaps : https://www.w3schools.com/css/css_grid.asp
+      The spaces between each column/row are called gaps.
+      You can adjust the gap size by using one of the following properties:
+          column-gap
+          row-gap
+          gap 
+      gap: 50px 70px;  //both collumn and row gap
+          */
+
+      .flex .nav-list-flex {
+        display: flex; /* online make into row */
+        gap: 2em; /* making space/gap like margin */
+        flex-wrap: wrap;
+      }
+
+      .grid .nav-list-grid {
+        display: grid;
+        /* grid-auto-flow: column; two line to make row , */
+        grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+        /* make fix size 90, use this of grid-auto-flow */
+      }
+
+      .nav-list-flex {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      .nav-list-grid {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      /* flex card */
+      .flex-card {
+        display: flex;
+        gap: 1em;
+      }
+
+      .grid-card {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1em;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <div>
+        <h2>CSS Grid Layout</h2>
+      </div>
+      <h1>Flexbox</h1>
+      <div class="flex-container">
+        <div>Lorma</div>
+        <div>there is no color</div>
+        <div>color is red</div>
+        <div>color is red, clue</div>
+        <div>color is red, clis ns dud</div>
+        <div>color is gret</div>
+        <div>color is happy holody</div>
+        <div>color is book reading</div>
+      </div>
+      <br />
+      <h1>Grid</h1>
+      <a href="https://gridbyexample.com/examples/">GRID EXAMPLE</a>
+      <div class="grid-continer">
+        <div>Lorma</div>
+        <div>there is no color</div>
+        <div>color is red</div>
+        <div>color is red, clue</div>
+        <div>color is red, clis ns dud</div>
+        <div>color is gret</div>
+        <div>color is happy holody</div>
+        <div>color is book reading</div>
+      </div>
+    </div>
+
+    <!-- 
+    flexbox
+      > don't take extra space, use wrap to make resposive
+      > when we want the child to have specifix size/height 
+    
+    Grid
+      > when regid parent system
+      Take extra spaces if we fixed thc column size
+      column are locked in
+
+
+    both :
+      > start with grid and top and make use of flex box to rezise childs
+
+    *********flexbox: MAKING IN SAME SIZE COLUMN*********
+    .container {
+      display:flex;
+      gap:1em;
+    }
+
+    .columns > * {
+      flex:1;
+    }
+
+    *********GRID: MAKING IN SAME SIZE COLUM*********
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr; //only problem when one word is very long
+      gap: 1em;
+    }
+    -->
+    <p>
+      Flexbox is made for one dimensional layouts (like menu) and Grid is made
+      for two dimensional layouts(like menu, sidebar,main,footer) and
+    </p>
+    <p>
+      CSS Grid will give you more flexibility, make your markup simpler and the
+      code will be easier to maintain.
+    </p>
+    <header class="flex">
+      <h2>Flexbox Nav</h2>
+      <nav>
+        <ul class="nav-list-flex">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Service information goes hear</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <header class="grid">
+      <h2>Grid Nav</h2>
+      <nav>
+        <ul class="nav-list-grid">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Service information goes hear</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="cards">
+      <h2>Flex cards (same columns)</h2>
+      <div class="flex-card">
+        <div>
+          <h3>Card1</h3>
+          <p>Heppy cards this is marry chrmas for you</p>
+        </div>
+        <div>
+          <h3>Card2</h3>
+          <p>Heppy cards this is marry chrmas for you</p>
+        </div>
+        <div>
+          <h3>Card3</h3>
+          <p>Heppy cards this is marry chrmas for you</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="cards">
+      <h2>Grid cards (same columns)</h2>
+      <div class="grid-card">
+        <div>
+          <h3>Card1</h3>
+          <p>Heppy cards this is marry chrmas for you</p>
+        </div>
+        <div>
+          <h3>Card2</h3>
+          <p>Heppy cards this is marry chrmas for you</p>
+        </div>
+        <div>
+          <h3>Card3</h3>
+          <p>Heppy cards this is marry chrmas for you</p>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
