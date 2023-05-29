@@ -1,149 +1,157 @@
 <html>
-<head>
-<meta charset="UTF-8" />
-<!-- <script src="script.js"></script> -->
-<link rel="stylesheet" type="text/css" href="styles.css" />
-<link rel="stylesheet" type="text/css" href="media-query.css" />
-<style>
 
-/* Making page to center */
-.container {
-   width:700px;
-   /* margin-left:auto;
+<head>
+  <meta charset="UTF-8" />
+  <!-- <script src="script.js"></script> -->
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+  <link rel="stylesheet" type="text/css" href="media-query.css" />
+  <style>
+    /* Making page to center */
+    .container {
+      width: 700px;
+      /* margin-left:auto;
    margin-right:auto; */
-   margin: 0 auto;
-   background-color: lightgrey;
-   padding: 10px 10px 10px 10px;
-  }
+      margin: 0 auto;
+      background-color: lightgrey;
+      padding: 10px 10px 10px 10px;
+    }
 
-  header{
-    height:100px;
-    display: flex;
-    background-color:grey;
-    margin:auto 10 auto;
-    color:white;
-    border-style: dashed solid;
-  }
+    header {
+      height: 100px;
+      display: flex;
+      background-color: grey;
+      margin: auto 10 auto;
+      color: white;
+      border-style: dashed solid;
+    }
 
-  a{
-    /* margin don't work on the anchor element, fix make inline-block */
-    display:inline-block;
-    margin-right:70px;
-    color:blue;
-  }
+    a {
+      /* margin don't work on the anchor element, fix make inline-block */
+      display: inline-block;
+      margin-right: 70px;
+      color: blue;
+    }
 
-  header{
-    padding:10px 10px 10px 10px;
-  }
-</style>
-<head>
+    header {
+      padding: 10px 10px 10px 10px;
+    }
+  </style>
+
+  <head>
+
   <body>
-    
-    <header>
-        <h1 style="background-color:green">Learn CSSiii!</h1><hr>
-        <div>
-        <a href="/floathome.html">HOME floathome</a><br/>
-        <a href="/position.html">Position page</a><br/>
-        <a href="/pxremvwvh.html">px vw vh page</a><br/>
-        <a href="/psudocode.html">psudocode</a><br/>
-        <a href="/flexbox-grid-conpare.html">flexbox-grid</a><br/>
-        
-        </div>
-        <div>
-        <!-- float -> flexbox -> css grid -->
-        <a href="/float.html">Float page</a><br/>
-        <a href="/flexboxbasic.html">flexbox basic page</a><br/>
-        <a href="/flexbox.html">flexbox+grid page</a><br/>
-        <a href="/grid.html">Grid page22</a><br/>
 
-        </div> 
-        <div>   
-          <a href="/cheetsheet.html">Cheetsheet page</a><br/>
-          <a href="/symantichtml.html">Symantichtml page</a><br/>
-          <a style="Color:pink" href="/grid.html">Grid Basic Dvesh</a><br/>
-          <a href="https://gridbyexample.com/examples/">Grid Example</a><br/>
-          <a href="https://dev.to/kunaal438/css-position-everything-you-need-for-good-developer-pfh">CSS Position</a><br/>
-          <a href="https://dev.to/kunaal438/display-flex-complete-guide-on-css-flex-box-2021-5bi2/">Flexbox Example</a><br/>
-        </div>
+    <header>
+      <h1 style="background-color:green">Learn CSSiii!</h1>
+      <hr>
+      <div>
+        <a href="/floathome.html">HOME floathome</a><br />
+        <a href="/position.html">Position page</a><br />
+        <a href="/pxremvwvh.html">px vw vh page</a><br />
+        <a href="/psudocode.html">psudocode</a><br />
+        <a href="/flexbox-grid-conpare.html">flexbox-grid</a><br />
+
+      </div>
+      <div>
+        <!-- float -> flexbox -> css grid -->
+        <a href="/float.html">Float page</a><br />
+        <a href="/flexboxbasic.html">flexbox basic page</a><br />
+        <a href="/flexbox.html">flexbox+grid page</a><br />
+        <a href="/grid.html">Grid page22</a><br />
+
+      </div>
+      <div>
+        <a href="/cheetsheet.html">Cheetsheet page</a><br />
+        <a href="/symantichtml.html">Symantichtml page</a><br />
+        <a style="Color:pink" href="/grid.html">Grid Basic Dvesh</a><br />
+        <a href="https://gridbyexample.com/examples/">Grid Example</a><br />
+        <a href="https://dev.to/kunaal438/css-position-everything-you-need-for-good-developer-pfh">CSS
+          Position</a><br />
+        <a href="https://dev.to/kunaal438/display-flex-complete-guide-on-css-flex-box-2021-5bi2/">Flexbox
+          Example</a><br /><a
+          href="https://stackblitz.com/edit/web-platform-dkqtho?file=index.html,help.txt">Stackbiz</a><br />
+      </div>
     </header>
     <div class="container">
 
 
-    <h1 style="color:red">Topic & inline CSS!</h1>
-    <ui>
-      <li class="first-child">Position - static/relative/fixed/absolute/static</li>
-      <li>Float - left/right, out of flow, containter will not adjust the height</li>
-      <li>Css Grid</li>
-      <li>Flex box</li>
-      <li>Dispay - none, inline, block,flex,grid</li>
-      <li>px, uv</li>
-      <li>List items -> ol/ul----li</li>
-      <li>SELECTOR -> <br/>[ID -> #]     <br/> [CLASS -> .]   <br/>
-         NOTE - BIG DIFRENCE BETWEEN ID ANC CLASS IS, WE ARE NOT ALOWED TO REPETE THE ID
-      </li>
-      <br/><br/>
-       
-      <li>----Style Text---</li>
-      <li>font-family: Georgia, serif;</li>
-      <li>color: #1C6EA4;</li>
-      <li>font-size: 16px;</li>
-      <li>font-weight: bold;</li>
-      <li>font-style: italic;</li>
-      <li>line-height: 1.6;</li>
-      <li>text-aligh:center</li>
-      <li>text-decoration: underline solid rgb(68, 68, 68); or none</li>
-      <li>text-transform: uppercase;none;lowercase;</li><br/><br/>
-      <li>----Style Text---</li>
-      <li>background-color:#1C6EA4;</li>
-      <li>background-image: url()</li>
-      <li>border: 3px solid #1C6EA4;   solid/dass</li>
-      <li>border-radius: 33px;</li>
-      <li>border-bottom: 3px solid #1C6EA4;</li>
-      <li>margin:10px 10px 10px 10px; margin-bottom/top/left/bottom</li>
-      <li>padding:10px 10px 10px 10px; margin-bottom/top/left/bottom</li>
-      <li>Combined element { footer p { font-size:10px } }</li>
-      <li>float:left/right</li>
-      <li>clear:both;</li>
-      <li>curson:pointer;</li>
-      <li>list-style:none - remove ul</li>
-      <li>psudocoe</li><br/><br/>
-      <li>@media screen (all, print, screen, speech)</li>
-      <li>@media screen and (max-width: 480px) { }    (Viewport is 480 pixels or smaller)</li>
-      <li>@media screen and (max-width: 600px), (max-height: 500px){}(Viewport width smaller OR height smaller)    <a href="/media-query.html">Media page</a></li>
-      <li><a href="https://htmlcheatsheet.com/css/#">Css cheetsheet</a></li><br/><br/>
-      books - mdn css<br/><br/>
-      <p>Learn color</p>
-      RED Green blue <br/>
-      red color = R-255, G-0, B-0<br/>
-      gree color = R-0, G-255, B-0<br/>
-      blue color = R-0, G-0, B-255<br/>
+      <h1 style="color:red">Topic & inline CSS!</h1>
+      <ui>
+        <li class="first-child">Position - static/relative/fixed/absolute/static</li>
+        <li>Float - left/right, out of flow, containter will not adjust the height</li>
+        <li>Css Grid</li>
+        <li>Flex box</li>
+        <li>Dispay - none, inline, block,flex,grid</li>
+        <li>px, uv</li>
+        <li>List items -> ol/ul----li</li>
+        <li>SELECTOR -> <br />[ID -> #] <br /> [CLASS -> .] <br />
+          NOTE - BIG DIFRENCE BETWEEN ID ANC CLASS IS, WE ARE NOT ALOWED TO REPETE THE ID
+        </li>
+        <br /><br />
 
-      white= R-255, G-255, B-255<br/>
-      black= R-0, G-0, B-0<br/>
+        <li>----Style Text---</li>
+        <li>font-family: Georgia, serif;</li>
+        <li>color: #1C6EA4;</li>
+        <li>font-size: 16px;</li>
+        <li>font-weight: bold;</li>
+        <li>font-style: italic;</li>
+        <li>line-height: 1.6;</li>
+        <li>text-aligh:center</li>
+        <li>text-decoration: underline solid rgb(68, 68, 68); or none</li>
+        <li>text-transform: uppercase;none;lowercase;</li><br /><br />
+        <li>----Style Text---</li>
+        <li>background-color:#1C6EA4;</li>
+        <li>background-image: url()</li>
+        <li>border: 3px solid #1C6EA4; solid/dass</li>
+        <li>border-radius: 33px;</li>
+        <li>border-bottom: 3px solid #1C6EA4;</li>
+        <li>margin:10px 10px 10px 10px; margin-bottom/top/left/bottom</li>
+        <li>padding:10px 10px 10px 10px; margin-bottom/top/left/bottom</li>
+        <li>Combined element { footer p { font-size:10px } }</li>
+        <li>float:left/right</li>
+        <li>clear:both;</li>
+        <li>curson:pointer;</li>
+        <li>list-style:none - remove ul</li>
+        <li>psudocoe</li><br /><br />
+        <li>@media screen (all, print, screen, speech)</li>
+        <li>@media screen and (max-width: 480px) { } (Viewport is 480 pixels or smaller)</li>
+        <li>@media screen and (max-width: 600px), (max-height: 500px){}(Viewport width smaller OR height smaller) <a
+            href="/media-query.html">Media page</a></li>
+        <li><a href="https://htmlcheatsheet.com/css/#">Css cheetsheet</a></li><br /><br />
+        books - mdn css<br /><br />
+        <p>Learn color</p>
+        RED Green blue <br />
+        red color = R-255, G-0, B-0<br />
+        gree color = R-0, G-255, B-0<br />
+        blue color = R-0, G-0, B-255<br />
 
-      yello (red/green) = R-255, G-255, B-0<br/>
-      pink (red/blue) = R-255, G-0, B-255<br/>
-      ligh blue (blue/green) = R-0, G-255, B-255<br/><br/><br/>
+        white= R-255, G-255, B-255<br />
+        black= R-0, G-0, B-0<br />
 
-      CSS <br/>
-      RGB notatino<br/>
-        rgb(0, 255, 255)ligh blue<br/>
-        rgb(0, 255, 255, 0.3)ligh blue  0.3 is tranprancy<br/>
-        rgb(244, 179, 63)ligh yello<br/><br/><br/>
+        yello (red/green) = R-255, G-255, B-0<br />
+        pink (red/blue) = R-255, G-0, B-255<br />
+        ligh blue (blue/green) = R-0, G-255, B-255<br /><br /><br />
 
-      Hexadecimal notatino  <br/>
-        #00ffff blue ff is equal to 255<br/>
+        CSS <br />
+        RGB notatino<br />
+        rgb(0, 255, 255)ligh blue<br />
+        rgb(0, 255, 255, 0.3)ligh blue 0.3 is tranprancy<br />
+        rgb(244, 179, 63)ligh yello<br /><br /><br />
+
+        Hexadecimal notatino <br />
+        #00ffff blue ff is equal to 255<br />
         #0ff shorthandv
-        rgb(0,0,0)  / #000000  /#000   - white<br/>
-        rgn(69,69,60 / #444444/ #444) light blaick<br/>
+        rgb(0,0,0) / #000000 /#000 - white<br />
+        rgn(69,69,60 / #444444/ #444) light blaick<br />
 
-        rgb(183,183,183) / #b7b7b7 grey<br/>
-        rgb (255,255,255) / #ffffff  /#fff<br/>
-    <ui>
-      <hr/>
-     
-    </ul>
+        rgb(183,183,183) / #b7b7b7 grey<br />
+        rgb (255,255,255) / #ffffff /#fff<br />
+        <ui>
+          <hr />
+
+          </ul>
     </div>
-    
+
   </body>
+
 </html>
