@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flexbox Crash Course</title>
+    <!-- https://www.youtube.com/watch?v=5qVuORLniwM -->
+    <link rel="stylesheet" href="style.css">
+    <!-- .container>.box*8{box-$} -->
+    <!-- 
+        --::ON THE CONTAINER::--
+        display:flex;
+        flex-direction: row/column     [row-reverse, column-reverse]
+        flex-wrap: wrap or nowrap
+        align-itm: flex-start (vertical/cross axis)
+        justify-content: center (horizontal/main axis/remove extra space)
+        gap:30 (width) /*row-gap/column-gap;>  flex-flow:wrap row*/
+         
+        height:100px
+        border:1px solid red
+        # gap-0  (width, space between items, not margin, like padding,
+
+        --::ON THE ITEMS::--
+        flex: 1; evenly grow the items, flex-grow, flex-shrink, flex-basis growth
+        order:1 to 99 or negative 
+        flex-grow: 1 basic is 1, but if increase 2 make item bigger
+        flex-shrink: same but opposite
+        flex-basis: 20% 60% 20%
+        align-self: flex-start/center (align item vertically)
+     -->
+</head>
+
+
+<body>
+    <div class="fcontainer">
+        <div class="fitem item1">1</div>
+        <div class="fitem item2">2</div>
+        <div class="fitem item3">3</div>
+        <div class="fitem item4">4</div>
+    </div>
+</body>
+
+</html>

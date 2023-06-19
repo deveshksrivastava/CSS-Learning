@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .container {
+      width: 100%;
+      /* height: 300px; */
+      margin: 0 auto;
+      background-color: pink;
+    }
+
+    .main-header {
+      background-color: grey;
+      padding: 20px 30px;
+      margin-bottom: 50px;
+      height: 50px;
+    }
+
+    nav {
+      font-size: 20px;
+      text-align: center;
+      float: right;
+    }
+
+    h1 {
+      float: left;
+    }
+
+    .clear {
+      clear: both;
+    }
+
+    /* second way to clear */
+    /* .clear-fix::after {
+        clear: both;
+        content: '';
+        display: block;
+      } */
+
+    article {
+      background-color: red;
+      height: 240px;
+      float: left;
+      width: 84%;
+    }
+
+    /* box-sizing: border-box; */
+    /* The box-sizing property allows us to include the padding and border in an element's total width and height. */
+    aside {
+      background-color: grey;
+      float: right;
+      height: 140px;
+      width: 15%;
+      box-sizing: border-box;
+      padding: 50px;
+    }
+
+    footer {
+      background-color: black;
+      clear: both;
+      color: white;
+      height: 40px;
+    }
+  </style>
+</head>
+
+<body>
+  <h2>Float</h2>
+  <div class="container">
+    <header class="main-header clear-fix">
+      <h1>The code header</h1>
+      <nav>
+        <a href="sdsd">Blog</a>
+        <a href="sdsd">Challenger</a>
+        <a href="sdsd">Flexbox</a>
+        <a href="sdsd">Css Grid</a>
+      </nav>
+      <div class="clear"></div>
+    </header>
+    <article>Article</article>
+    <aside>Aside</aside>
+    <footer>Footer</footer>
+  </div>
+
+</body>
+
+</html>

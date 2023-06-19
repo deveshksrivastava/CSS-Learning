@@ -1,0 +1,114 @@
+<html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+  <style>
+    /* FLEXBOX -have main container where display: flex make layout with flex-direction */
+    /* Fexbox have two parts
+      1. flex continter (PARENT) -
+        > # flex-direction - main axis, row|row-reverse|column|column-reverse
+        > # flex-wrap: nowrap|wrap|wrap-reverse
+        > # aligh-content: stetch|flex-start/end/center, space-around/between/evenly
+        > # justify-content- align item horizontal , flex-start/end/center, space-around/between/evenly
+        > # aligh-item - align item vertically, stretch, flex-start/end/center/baseline
+        > # gap-0 space between items, without using margin/no margin required here,
+
+
+      2. Flex Item (CHILDEREN)
+        # order - 
+        # flex 
+        # aligh-self
+
+      main axis - row
+      cross axis - column */
+    /* make in collumn wise */
+
+    .container1 {
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .container2 {
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      gap: 30px;
+
+      flex-direction: row;
+      /* //default direction */
+
+      /* justify-content: space-between; */
+      /* default flex-start, space-around, space-between, space-evenly */
+      border: 1px solid red;
+      flex-wrap: wrap;
+      /* default wrap, wrap-reverse */
+      /* align-items: end;
+        align-content: center; */
+      height: 10px;
+    }
+
+    /* // el - at element/item level */
+
+    .el {
+      /* margin-right: 20px; */
+      /* DEFAULT */
+      /*
+        flex-grow: 0;           HELP TO GROW
+        flex-shrink: 1;         SHRINK ITEM
+        flex-basis: auto;       MAKE ITEM WIDTH*/
+
+      flex-basis: 100px;
+      flex-shrink: 0;
+      flex-grow: 1;
+    }
+
+    .el-1 {
+      align-self: flex-end;
+    }
+
+    .el-4 {
+      align-self: center;
+      order: 1;
+      /*making last-child */
+    }
+
+    .el-6 {
+      order: -1;
+      /*making FIRST-child */
+    }
+
+    /* SPACING DONE IN 2 WAYS*/
+    /* one is below send is gap in container */
+  </style>
+</head>
+
+<body>
+  <h2>Flex box</h2>
+  <!-- inlign style use ; to seprate and no "" -->
+  <div>Starting posision</div>
+  <div class="container1" style="background-color: lightblue; height: 90px">
+    <div class="el-11" style="background-color: pink">Home</div>
+    <div class="el-22" style="background-color: red; height: 90px">
+      Search
+    </div>
+    <div class="el-33" style="background-color: black">Logout</div>
+    <div class="el-44" style="background-color: blue">Contatus</div>
+    <div class="el-55" style="background-color: green">Home</div>
+    <div class="el-66" style="background-color: yellow">City</div>
+  </div>
+  <div>Final posision</div>
+  <div class="container2" style="background-color: grey; height: 120px">
+    <div class="el el-1" style="background-color: pink">Home</div>
+    <div class="el el-2" style="background-color: red; height: 90px">
+      Search
+    </div>
+    <div class="el el-3" style="background-color: black">Logout</div>
+    <div class="el el-4" style="background-color: blue">Contatus</div>
+    <div class="el el-5" style="background-color: green">Home</div>
+    <div class="el el-6" style="background-color: yellow">City</div>
+  </div>
+</body>
+
+</html>
