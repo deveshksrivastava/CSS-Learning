@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+  <!-- This is related to position relative, absolute, static, fixed, sticky -->
+  <!-- position: static is default to the page, no effect with top/bottom/left/right -->
+  <!-- position: relative changes with top/bottom/left/right, item relative with static position, remove from document flow, can make over others. -->
+  <!-- 
+    <h2>Position</h2>
+    <h2><img src="https://www.youtube.com/watch?v=xG57rV_aNvw">Best Position Video</h2>
+    <ui>
+        <li>Static<span>-> no effect on the top/bottom/left/right</span></li>
+        <li>Relative - have effect - remove from the flow - should not use child, use in parent</li>
+        <li>Fixed - have effect - this will always be fixed base on the pg</li>
+        <li>Absolute - used mostly for top/left/right/bottom, not used in parent</li>
+        <li>strict ->; is positioned based on the user's scroll position.</li>
+        <li>Note: parent is made as relative or static and the child will have absolute position to move according to the parent</li>
+      <ui> -->
+  <style>
+    .container {
+      background-color: #99d9c8 !important;
+      position: relative;
+      /* width: 200px; */
+      height: 500px;
+      /* overflow: scroll; */
+      overflow-x: hidden;
+      overflow-y: scroll;
+    }
+
+    .myclass {
+      border: 1px solid red;
+
+    }
+
+    .box {
+      border: 1px solid red;
+      width: 100px;
+      height: 100px;
+    }
+
+    .box1 {
+      background-color: blue;
+      position: absolute;
+      top: 300px;
+    }
+
+    .box2 {
+      background-color: green;
+      position: absolute;
+      top: 350px;
+      right: 50px;
+      bottom: 50px;
+      left: 50px;
+    }
+
+    .header {
+      width: 100%;
+      position: absolute;
+      /* left:50px; */
+      top: 0px;
+    }
+
+    .footer {
+      width: 100%;
+      position: fixed;
+      bottom: 80px;
+    }
+
+    /* Track */
+    ::-webkit-scrollbar {
+      width: 8px;
+      background-color: #f5f5f5;
+    }
+
+    /* Thumb */
+    ::-webkit-scrollbar-thumb {
+      background-color: #888;
+      border-radius: 4px;
+    }
+
+    /* Hovered Thumb */
+    ::-webkit-scrollbar-thumb:hover {
+      background-color: red;
+    }
+
+    /* Corner */
+    ::-webkit-scrollbar-corner {
+      background-color: yellow;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="myclass">
+      <div class="box header">header</div>
+      <div class="box box1">Box 1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni vel aliquam nisi
+        reiciendis voluptatibus nihil deleniti quis eaque odit necessitatibus eius delectus optio, facilis dolore
+        eligendi iusto, qui nostrum dolorum quasi nam voluptate tenetur molestias quibusdam mollitia. Natus aspernatur
+        eaque velit temporibus, amet minus veniam neque odit quisquam numquam, eum fugiat, aut pariatur magnam.
+        Voluptatibus praesentium vero odit placeat maxime repellendus amet, omnis dignissimos perferendis adipisci
+        commodi aperiam quasi esse fugit, illo facilis neque. Neque perspiciatis totam, natus. Fugit itaque aliquid
+        dolores, quaerat, quo doloremque debitis maiores nemo aperiam architecto adipisci temporibus facilis asperiores
+        aspernatur odit earum facere, tempore quae sit ipsam! Voluptatibus nostrum natus labore eligendi necessitatibus
+        ipsa, aut et? Impedit animi in dignissimos exercitationem minus, odio, dolores recusandae accusamus. Laborum
+        ratione qui labore, distinctio ex illum aperiam repudiandae aut totam, veritatis adipisci aliquid officiis.
+        Recusandae veritatis consectetur facilis velit minima reprehenderit deleniti maiores aliquid asperiores modi
+        magnam nam soluta nesciunt, fugit dolor, error quod. Expedita harum quas adipisci explicabo nemo, laboriosam
+        repellendus, dolorem corporis. Animi quos unde quis perspiciatis tempore reprehenderit, incidunt labore minima
+      </div>
+      <div class="box box2">Box 2</div>
+      <div class="box footer">footer</div>
+      <!-- <a href="https://www.youtube.com/watch?v=xG57rV_aNvw" >Best Position Video</a> -->
+    </div>
+  </div>
+
+</body>
+
+</html>

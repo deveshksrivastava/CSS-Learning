@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  .box1 {
+    border: 2px solid red;
+    position: fixed;
+    z-index: 0;
+    height: 200px;
+    width: 300px
+  }
+
+  .box2 {
+    position: relative;
+    border: 2px solid green;
+    z-index: -1;
+    top: 100px;
+    left: 40px;
+    height: 200px;
+    width: 700px
+  }
+
+    /* The overflow property specifies whether to clip the content or to add scrollbars when the content of an element is too big to fit in the specified area.
+
+    The overflow property has the following values:
+
+    visible - Default. if overflow text, it will show overflow
+    hidden - cut the text if goes beyound the boundary
+    scroll - make the content scroll with in the height/width
+    auto - Similar to scroll, but it adds scrollbars only when necessary 
+    
+    overflow-x: hidden;
+    overflow-y: scroll;
+    */
+  header {
+    height: 200px;
+    width: 100%;
+    text-align: center;
+    padding-top: 100px;
+    color: white;
+    overflow: hidden;
+    background: #C04848;
+    background: linear-gradient(rgb(72, 0, 72, 0.8), rgb(192, 72, 72, 0.8)), url("https://ik.imagekit.io/ikmedia/blog/hero-image.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .example img {
+    width: 100%;
+  }
+
+  .example::after {
+    content: "Multi-line\00000a text";
+    position: absolute;
+    top: 80px;
+    white-space: pre;
+    right: 15px;
+    font-weight: bold;
+    text-align: right;
+    font-size: 30px;
+  }
+</style>
+
+<body>
+  <!-- <div class="box1">Box 1</div>
+  <div class="box2">Box 2</div> -->
+  <!-- 
+  <header>
+    <section class='hero-header'>
+      <h1>Hero title</h1>
+      <h2>Another landing page</h2>
+      <button>Sign-up</button>
+    </section>
+  </header> -->
+
+  <div class="example">
+    <img class="background-image" src="https://ik.imagekit.io/ikmedia/tr:w-1200,h-400/accessories_banner.jpg">
+  </div>
+</body>
+
+</html>

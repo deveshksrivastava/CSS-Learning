@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>JS Bin</title>
+    <!-- This is related to position relative, absolute, static, fixed, sticky -->
+    <!-- position: static is default to the page, no effect with top/bottom/left/right -->
+    <!-- position: relative changes with top/bottom/left/right, item relative with static position, 
+    remove from document flow, can make over others. -->
+    <!-- 
+    How to move object?
+    1. Margin - when using this , in case of 2 box it will move both the boxs
+    2. Postion
+    <h2>Position</h2>
+    1. help to overlap, i.e text on image, stick logo postion, open menu bar, stick header/footer
+    Relative - help to overlap, move around the page but don't leave the space occupited i.e text on image
+
+    <h2><img src="https://www.youtube.com/watch?v=xG57rV_aNvw">Best Position Video</h2>
+    <ui>
+        <li>Static<span>-> no effect on the top/bottom/left/right</span></li>
+        <li>Relative - have effect - remove from the flow - should not use child, use in parent</li>
+        <li>Fixed - have effect - this will always be fixed base on the pg</li>
+        <li>Absolute - used mostly for top/left/right/bottom, not used in parent</li>
+        <li>strict ->; is positioned based on the user's scroll position.</li>
+        <li>Note: parent is made as relative or static and the child will have absolute position to move according to the parent</li>
+      <ui> -->
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        list-style: none; /* remove * before the list */
+        text-decoration: none; /* remove underline from li */
+      }
+
+      header {
+        display: flex;
+        height: 100%;
+        /* background-color: lightgreen; */
+        box-shadow: 0px 2px 10px 0px #ccc; /* give border grey shadow */
+      }
+
+      header figure {
+        padding: 10px;
+        position: relative; /* open left/right/top/button */
+        top: 50px;
+      }
+      #logo-text {
+        position: absolute;
+        top: 10px;
+        left: 38px;
+        color: rgb(255, 0, 0);
+      }
+
+      div h3 {
+        width: 300px;
+      }
+
+      header figure img {
+        width: 40px;
+        margin-right: 55px;
+      }
+
+      #banner {
+        height: 100vh;
+        width: 100%;
+        background-color: lightskyblue;
+      }
+
+      nav ul {
+        display: flex;
+      }
+
+      nav ul li {
+        padding: 30px 15px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- text on image -->
+    <header>
+      <figure>
+        <img
+          src="https://www.mcarthurglen.com/Static/images/mag-logo-new.svg"
+          alt=""
+        />
+        <div id="logo-text">
+          <h3>DESIGNER OUTLET</h3>
+          <h6>SWINDON</h6>
+        </div>
+      </figure>
+      <nav>
+        <ul>
+          <li>Home</li>
+          <li>Course</li>
+          <li>Contact Us</li>
+        </ul>
+      </nav>
+    </header>
+    <section id="banner"></section>
+  </body>
+</html>
