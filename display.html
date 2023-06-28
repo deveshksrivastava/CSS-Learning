@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      a {
+        border: 2px solid green;
+        width: 200px;
+        margin: 20px;
+        padding: 10px;
+        display: block; /* block=div i.e <a>, span li use display=block  */
+      }
+      ul li {
+        border: 2px solid green;
+        width: 200px;
+        margin: 20px;
+        padding: 10px;
+        display: list-item; /* can give to the anochor elemets */
+        list-style-position: inside;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>display</h2>
+    <!-- 
+    display: none // to hide 
+ 
+    display: inline (li) make all of them in column,
+    make div to span span - this behave like text to make like div, why? in span
+    width, margin ,padding don' t works 
+ 
+    display:block fix and make span to div
+      display: block - make like div and margin, padding works display: -->
+    <!-- 
+    display:inline-block - this will make like span in 1 line but width/margin works -->
+    
+    <!-- 
+    display: list-item; - makes the property as list, comes in new line, show the dot on the text, 
+      now you can use all the list property like list-style-position: inside;, 
+      and for span working as div -->
+
+    <!-- https://www.youtube.com/watch?v=kIASoZjmCG0&t=450s" -->
+    <img
+      src="assert/display.JPG"
+      alt="https://www.youtube.com/watch?v=kIASoZjmCG0&t=450s"
+      width="100%"
+      height="500px"
+    />
+    <a href="https://www.youtube.com/watch?v=kIASoZjmCG0&t=450s">First</a>
+    <a href="https://www.youtube.com/watch?v=kIASoZjmCG0&t=450s">second</a>
+    <a href="https://www.youtube.com/watch?v=kIASoZjmCG0&t=450s">thierd</a>
+
+    <ul>
+      <li>Lorem.</li>
+      <li>Cupiditate.</li>
+      <li>Pariatur?</li>
+      <li>Omnis?</li>
+    </ul>
+  </body>
+</html>

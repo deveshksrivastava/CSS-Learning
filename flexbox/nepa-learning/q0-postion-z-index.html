@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>JS Bin</title>
+    <!-- https://www.youtube.com/watch?v=5S2fNVdr-zU&list=PL0b6OzIxLPbzDsI5YXUa01QzxOWyqmrWw&index=45 -->
+    <!-- <h3>This opens top/right/left/bottom/z-index, all this will not work without postion</h3> -->
+    <!-- <div>Defnition (x/y axis) , line in books,Defualt = auto / 0</div>
+    <div>z-index =1 take me to top of all stack</div>
+    <div>z-index = -1 take me to back of all stack</div>
+    <div>z-index = -1 take me to back of all stack</div>
+    <div>A=1, B=2, C=3, D=4 Making the order, it can be in negetive also</div> -->
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        list-style: none; /* remove * before the list */
+        text-decoration: none; /* remove underline from li */
+      }
+
+      div {
+        position: absolute;
+        height: 100px;
+        width: 100px;
+        border: 1px solid white;
+      }
+
+      .boxA {
+        background-color: red;
+        top: 100px;
+        left: 50px;
+      }
+      .boxB {
+        background-color: green;
+        top: 150px;
+        left: 100px;
+        z-index: 1;
+      }
+
+      .boxC {
+        background-color: blue;
+        top: 200px;
+        left: 150px;
+      }
+    </style>
+  </head>
+
+  <body class="container">
+    <div>
+      <div class="boxA">A</div>
+      <div class="boxB">B</div>
+      <div class="boxC">C</div>
+    </div>
+  </body>
+</html>

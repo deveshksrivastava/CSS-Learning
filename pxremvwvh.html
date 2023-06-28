@@ -40,28 +40,49 @@
     <p>Absolute :px</p>
     <p>Relative :rem,vm,vh,%</p>
     <div class="container">
-      <h3>ABSOLUTE</h3>
+      <h3>ABSOLUTE (fixed unit)</h3>
+      <p>
+        -- centimeter(cm) millimiter(mm), intch(in) pixel(px) point(pt)
+        picas(pc) [mostly used px]
+      </p>
       <div class="px">PIXILE</div>
       <div class="percentage">PIRCENTAGE(%)</div>
-      <h3>RELATIVE</h3>
+      <h3>RELATIVE - font-size</h3>
+      <p>
+        -- em, rem, ch, ex, vw, vh, vmax, vmin, % [mostly used rem, vh,vw,
+        %percentage]
+      </p>
+      <div class="em">
+        em- relative to font size of element ( LESS USED )/body (bodyfont=16px,
+        1em=13, 2em=2*16=36px ), font size of the element (e.g. 2.5em means the
+        font is 2.5 times bigger than the normal font), value based on the
+        parent element
+      </div>
       <div class="rem">
-        rem - relative to the font size of root(1rem=16px) - ANY ONE CHANGE THE
-        BROWSER SETTING IT WILL ALSO CHANGE BASE ON THE PASSING, MARGING AND
-        RESPONSIVE. GOOD TO USE, The rem value is based on the root element
-        (html), Its same as px but only diff is responsiveness
+        rem - boroswer/root(html), not with body, relative to the font size of
+        root(1rem=16px) - ANY ONE CHANGE THE BROWSER SETTING IT WILL ALSO CHANGE
+        BASE ON THE PASSING, MARGING AND RESPONSIVE. GOOD TO USE, The rem value
+        is based on the root element (html), Its same as px but only diff is
+        responsiveness
       </div>
       <!-- if html{ fontsize:10px}  .rem{ fotn-size:2rem (20px)} -->
-      <div class="em">
-        em- relative to font size of element ( LESS USED ), font size of the
-        element (e.g. 2.5em means the font is 2.5 times bigger than the normal
-        font), value based on the parent element
-      </div>
+      <!-- vw/vh - borowser width/height 100%, make body margin=0 and border=0,
+        There will not be any scrollbar, to see the whole page
+      
+      vw=50% make the whole page 50%,  it will chenge box to 50%-->
       <div class="vw">vw- relative to the 1% of the width of viewport</div>
       <div class="vh">vh- relative to the 1% of the height of viewport</div>
       <div class="percent">
         %- relative to the parent element - default is font 16px
         (font-size100%), but the vm works on the full view
       </div>
+      <h3>diffrenc betwen viewpost and percentage</h3>
+      <p>
+        viewport workes based on the whole screen, but the percentage % workes
+        based on the parent box
+      </p>
+      <h3>what is vmax</h3>
+      <p>it will take the viewport from the maximum of vw/vh.</p>
     </div>
   </body>
 </html>

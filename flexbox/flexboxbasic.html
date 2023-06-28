@@ -1,10 +1,10 @@
 <html>
-
-<head>
-  <link rel="stylesheet" type="text/css" href="styles.css" />
-  <style>
-    /* FLEXBOX -have main container where display: flex make layout with flex-direction */
-    /* Fexbox have two parts
+  <head>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <style>
+      /* FLEXBOX -have main container where display: flex make layout with flex-direction */
+      /* FLEXBOX replace flow property */
+      /* Fexbox have two parts
       1. flex continter (PARENT) -
         > # flex-direction - main axis, row|row-reverse|column|column-reverse
         > # flex-wrap: nowrap|wrap|wrap-reverse
@@ -21,94 +21,174 @@
 
       main axis - row
       cross axis - column */
-    /* make in collumn wise */
+      /* make in collumn wise */
 
-    .container1 {
-      display: flex;
-      align-items: flex-start;
-      justify-content: center;
-      gap: 10px;
+      ************************************continter property********************************
+      /* 
+    1. how to make responsive in mobile devices?
+    currenlty is available in collumn mode, but mobile want in row mode, use media queries for mobile devices
+
+    .container {
+      flex-direction:row;
+      justify-content:center;  
+                center make to center, 
+                flex-start - make it to the start of the container
+                flex-end to put at end  , 
+                flex-reverse change the order
+                space-between- make first/last at start and end, and other make equal distribution
+                    make 2 div at the start and end, 1st at start and 2nd at end
+                space-around - equal spaces between all the items
+                only 5 properties
+      flex-wrap : wrap 
+                wrap | no-wrap and use space-around 
+      width - there is not width, gap-row, gap-column, gap is used 
+      align-item: if 2 rows and 2 columns, he was thinking in to 2 part of row and making dicistion on height=250px
+                flex-start, required, main continer height=500px
+                        flex-start - in height make to start
+                flex-end - in height make to end
+                center - in height make center
+                only 3 properties
+
+      align-content: will take the continer as 1 and items are another and change to start will take all the items to start
+               flex-start, required height, all the 4 will go on the start, work on height=500px
+                       main continer height=500px
+               flex-end,
+               center
+               space-between
+               space-around
+               only 5 properties
+      bootstrap- text-start and text-end
     }
 
-    .container2 {
-      display: flex;
-      align-items: flex-start;
-      justify-content: center;
-      gap: 30px;
+    2. how to make center of div
+      flex-direction:row;
+      justify-content:center;
+      align-item: center;
 
-      flex-direction: row;
-      /* //default direction */
 
-      /* justify-content: space-between; */
-      /* default flex-start, space-around, space-between, space-evenly */
-      border: 1px solid red;
-      flex-wrap: wrap;
-      /* default wrap, wrap-reverse */
-      /* align-items: end;
+    @media screen and (min-width:200px) and (max-width:767px){
+      .container {
+        flex-direction:column-reverse;
+        
+      }
+    }
+
+    2. when to use row-reverse?
+    senarao you have text image side by side in desktop mode, but in mobile mode we require image on top 
+    and then text */
+
+    /* ************************************Flex Item property******************************** 
+      # order - item can be orderds with order: 1 | 2 | 3
+      # flex-glow: 1 make all of them in equal width with parent like 25%,25%,25%,25%
+          need to grow the 2d element
+          flex-glow: 2  20%,40%,20%,20%
+          ie. 
+          .item1.child(2){
+            flex-glow: 2 
+          }
+      # flex-basis - make the 2d element to 300px
+         ie. 
+          .item1.child(2){
+            flex-basis: 300px 
+          }
+      # flex-shrink : some time we want the 2d element should not shrink or be smaller than 300px
+           ie. 
+          .item1.child(2){
+            flex-shrink: 0 make this item with fixed size, it takes the main width 
+          }
+      # aligh-self : make item in start/end/center, [align-item was doing for container]
+            ie. 
+          .item1.child(2){
+            aligh-self: flex-start | flex-end | center 
+          }
+
+    *************end******************************** */
+
+      .container1 {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 10px;
+      }
+
+      .container2 {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 30px;
+
+        flex-direction: row;
+        /* //default direction */
+
+        /* justify-content: space-between; */
+        /* default flex-start, space-around, space-between, space-evenly */
+        border: 1px solid red;
+        flex-wrap: wrap;
+        /* default wrap, wrap-reverse */
+        /* align-items: end;
         align-content: center; */
-      height: 10px;
-    }
+        height: 10px;
+      }
 
-    /* // el - at element/item level */
+      /* // el - at element/item level */
 
-    .el {
-      /* margin-right: 20px; */
-      /* DEFAULT */
-      /*
+      .el {
+        /* margin-right: 20px; */
+        /* DEFAULT */
+        /*
         flex-grow: 0;           HELP TO GROW
         flex-shrink: 1;         SHRINK ITEM
         flex-basis: auto;       MAKE ITEM WIDTH*/
 
-      flex-basis: 100px;
-      flex-shrink: 0;
-      flex-grow: 1;
-    }
+        flex-basis: 100px;
+        flex-shrink: 0;
+        flex-grow: 1;
+      }
 
-    .el-1 {
-      align-self: flex-end;
-    }
+      .el-1 {
+        align-self: flex-end;
+      }
 
-    .el-4 {
-      align-self: center;
-      order: 1;
-      /*making last-child */
-    }
+      .el-4 {
+        align-self: center;
+        order: 1;
+        /*making last-child */
+      }
 
-    .el-6 {
-      order: -1;
-      /*making FIRST-child */
-    }
+      .el-6 {
+        order: -1;
+        /*making FIRST-child */
+      }
 
-    /* SPACING DONE IN 2 WAYS*/
-    /* one is below send is gap in container */
-  </style>
-</head>
+      /* SPACING DONE IN 2 WAYS*/
+      /* one is below send is gap in container */
+    </style>
+  </head>
 
-<body>
-  <h2>Flex box</h2>
-  <!-- inlign style use ; to seprate and no "" -->
-  <div>Starting posision</div>
-  <div class="container1" style="background-color: lightblue; height: 90px">
-    <div class="el-11" style="background-color: pink">Home</div>
-    <div class="el-22" style="background-color: red; height: 90px">
-      Search
+  <body>
+    <h2>Flex box</h2>
+    <!-- inlign style use ; to seprate and no "" -->
+    <div>Starting posision</div>
+    <div class="container1" style="background-color: lightblue; height: 90px">
+      <div class="el-11" style="background-color: pink">Home</div>
+      <div class="el-22" style="background-color: red; height: 90px">
+        Search
+      </div>
+      <div class="el-33" style="background-color: black">Logout</div>
+      <div class="el-44" style="background-color: blue">Contatus</div>
+      <div class="el-55" style="background-color: green">Home</div>
+      <div class="el-66" style="background-color: yellow">City</div>
     </div>
-    <div class="el-33" style="background-color: black">Logout</div>
-    <div class="el-44" style="background-color: blue">Contatus</div>
-    <div class="el-55" style="background-color: green">Home</div>
-    <div class="el-66" style="background-color: yellow">City</div>
-  </div>
-  <div>Final posision</div>
-  <div class="container2" style="background-color: grey; height: 120px">
-    <div class="el el-1" style="background-color: pink">Home</div>
-    <div class="el el-2" style="background-color: red; height: 90px">
-      Search
+    <div>Final posision</div>
+    <div class="container2" style="background-color: grey; height: 120px">
+      <div class="el el-1" style="background-color: pink">Home</div>
+      <div class="el el-2" style="background-color: red; height: 90px">
+        Search
+      </div>
+      <div class="el el-3" style="background-color: black">Logout</div>
+      <div class="el el-4" style="background-color: blue">Contatus</div>
+      <div class="el el-5" style="background-color: green">Home</div>
+      <div class="el el-6" style="background-color: yellow">City</div>
     </div>
-    <div class="el el-3" style="background-color: black">Logout</div>
-    <div class="el el-4" style="background-color: blue">Contatus</div>
-    <div class="el el-5" style="background-color: green">Home</div>
-    <div class="el el-6" style="background-color: yellow">City</div>
-  </div>
-</body>
-
+  </body>
 </html>
