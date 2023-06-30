@@ -1,0 +1,21 @@
+https://tailwindcomponents.com/cheatsheet/
+https://play.tailwindcss.com/
+
+p padding i.e .p-1, .px-2 left/right, .py top/bottom
+m margin
+space between .space-x-0 > *
+h height h-0, h-2 height: 0.5rem; /* 8px */
+w width  w-0, w-2 height: 0.5rem; /* 8px */
+
+Backgrounds
+.bg-black - black color
+
+.bg-gray-400 opecity is 0.4
+.bg-gray-900 dark and opecity is 1
+
+text-3x - textbox
+
+fornt famital  font-sans
+Font Size      text-sx, text-lg
+font weight    font-bold
+text-color     text-blue-600

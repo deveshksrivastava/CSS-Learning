@@ -29,8 +29,21 @@
     currenlty is available in collumn mode, but mobile want in row mode, use media queries for mobile devices
 
     .container {
-      flex-direction:row;
+      display: flex;
+      flex-direction:row | column;
+
+      flex-wrap : wrap 
+                wrap | no-wrap and use space-around
+      
+      flex-flow: row wrap;
+          The flex-flow property is a shorthand property for setting both the flex-direction and flex-wrap properties.
+              .flex-container {
+                display: flex;
+                flex-flow: row wrap;
+              }
+      
       justify-content:center;  
+          Work on the horizontal alignment
                 center make to center, 
                 flex-start - make it to the start of the container
                 flex-end to put at end  , 
@@ -39,25 +52,28 @@
                     make 2 div at the start and end, 1st at start and 2nd at end
                 space-around - equal spaces between all the items
                 only 5 properties
-      flex-wrap : wrap 
-                wrap | no-wrap and use space-around 
-      width - there is not width, gap-row, gap-column, gap is used 
-      align-item: if 2 rows and 2 columns, he was thinking in to 2 part of row and making dicistion on height=250px
+      gap
+          width - there is not width, gap-row, gap-column, gap is used 
+      
+      align-items: if 2 rows and 2 columns, he was thinking in to 2 part of row and making dicistion on height=250px
+          requires height and work on the vertical axis, 
                 flex-start, required, main continer height=500px
-                        flex-start - in height make to start
+                flex-start - in height make to start
                 flex-end - in height make to end
                 center - in height make center
-                only 3 properties
+                (((only 3 properties)))
 
-      align-content: will take the continer as 1 and items are another and change to start will take all the items to start
+      align-content: 
+         will take the continer as 1 and items are another and change to start will take all the items to start
                flex-start, required height, all the 4 will go on the start, work on height=500px
                        main continer height=500px
                flex-end,
                center
                space-between
                space-around
-               only 5 properties
-      bootstrap- text-start and text-end
+               (((only 5 properties))
+
+                bootstrap- text-start and text-end
     }
 
     2. how to make center of div
@@ -65,17 +81,24 @@
       justify-content:center;
       align-item: center;
 
-
+    3. when to use row-reverse?
+    senarao you have text image side by side in desktop mode, but in mobile mode we require image on top 
+    and then text 
+    
+    STEP 1:
+     .container {
+        flex-direction:row;
+        justify-content:end;      
+      }
+   
+    STEP 2:
+   
     @media screen and (min-width:200px) and (max-width:767px){
       .container {
-        flex-direction:column-reverse;
-        
+        flex-direction:column-reverse;      
       }
-    }
+    } */
 
-    2. when to use row-reverse?
-    senarao you have text image side by side in desktop mode, but in mobile mode we require image on top 
-    and then text */
 
     /* ************************************Flex Item property******************************** 
       # order - item can be orderds with order: 1 | 2 | 3

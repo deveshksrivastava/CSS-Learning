@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  /* background-color: rgb(150, 236, 255); */
+  background: url("../assert/registraionbg.jpg");
+  background-size: 137%;
+  background-position:  -400px 1px;
+
+}
+
+.main {
+  width: 365px;
+  margin: 100px auto 0px auto;
+  text-align: center;
+}
+
+
+
+ h2{
+  /* font-size: 15px;
+  font-weight: bolder;
+  color: brown; */
+  text-align: center;
+}
+
+.register {
+  background-color: rgba(0,0,0,0.5);
+  width: 100%;
+  padding: 20px;
+  font-size: 18px;
+  border-radius: 10px;
+  border: 1px solid rgb(68, 67, 67);
+  box-shadow: 2px 2px 12px;
+  color: #fff;
+  margin: 40px;
+}
+
+label{
+  font-family: sans-serif;
+  font-size: 18px;
+  font-style: italic;
+}
+
+input[type="text"] {
+  width: 300px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  outline: 0;
+  padding: 7px;
+  background-color: #fff;
+  box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+input[type="submit"]{
+  width:200px;
+  padding: 7px;
+  font-style: 16px;
+  font-weight: 600;
+  border-radius: 3px;
+    background-color: orange;
+    color: #fff;
+    cursor: pointer;
+    border: 1px solid rgba(255,255,255,0.3);
+    box-shadow: 1px 1px 5px rgba(255,255,255,0.3);
+
+}
+
+
+

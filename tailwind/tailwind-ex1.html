@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <title>Document</title>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              mycolorblue: 'blue',
+              mycolorred: 'red',
+              mycolorgreen: 'green',
+            },
+          },
+          screens: {
+            sm: '640px',
+            // => @media (min-width: 640px) { ... } mobile
+
+            md: '768px',
+            // => @media (min-width: 768px) { ... } tablet
+
+            lg: '1024px',
+            // => @media (min-width: 1024px) { ... } laptop 13inch, 
+            // lg:text-center this work in xl and 2xl also not below
+
+            xl: '1280px',
+            // => @media (min-width: 1280px) { ... } Desktop
+
+            '2xl': '1536px',
+            // => @media (min-width: 1536px) { ... } laege screen 27 inch and above
+          },
+        },
+      };
+    </script>
+    <style type="text/tailwindcss">
+      @layer utilities {
+        .content-auto {
+          content-visibility: auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="text-3xl text-orange-700 font-bold underline text-center">
+      Hello world!
+    </h1>
+    <h2 class="text-mycolorblue">This is my color</h2>
+    <h2 class="text-mycolorgreen">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis
+      assumenda corporis obcaecati deserunt adipisci sit. Animi ipsam rem nihil
+      corrupti repellendus perspiciatis illum minus unde mollitia, temporibus
+      quos, harum doloribus!
+    </h2>
+
+    
+    </p>
+    
+  </body>
+</html>

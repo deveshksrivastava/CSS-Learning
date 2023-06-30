@@ -7,6 +7,106 @@ div>ul>li*3>lorem1
 bd+ gives border
 #box1 will creat div with class="box1"
 
+# selector 
+check in the psudocode.html file
+  
+  .className
+    -> used multiple times
+    i.e <div class="continer">
+    calling - .container {}
+
+  #id
+    -> used only one time
+    i.e <div id="user_id">
+    calling - #user_id {}
+
+
+# selector type
+## Simple Selector
+ simple         - body {}, h1{}
+ class          - .container {}
+ id             - #box{}
+ universal        - * {  margin:0 } // applicable to all the elements
+ grouping seclector - h1, h2, p { color: #000000 }
+
+## Combincators Selector
+div class="box"
+  p p
+  div
+    p pbox
+ deendent slector(space)  -> div.box p { color: #00000 }  
+    // all the color change in all the p tag
+ child selctors           -> div.box > p { color: #000000 }
+    // color change in the fist child of p tag only
+ 
+ h1
+ p
+ p
+ p
+  Adjacent Sibling Selector(+) -> h1 + p { color: #000000 }
+    // h1 and next p will be colored
+  General Sibling Selector(+) -> h1 ~ p { color: #000000 }
+    // h1 and all the  p will be colored
+
+## Atribute Selctor
+  <input type="text" name="" value="">
+  <input type="text" name="" value="">
+  <input type="email" name="" value="">
+
+  input { border: 1px solid #000000}
+    //simple selector this will make all the above 3 elements red
+  input[type="text"] { border: 1px solid #000000 }
+    // this will make the first 2 elements red
+
+## psudu slector 
+  div class="box"
+    p
+    p
+    p
+    p
+
+    div.box p:first-child { background : #000000} // this will make the first paragrap red
+    div.box p:last-child { background : #000000}  // this will make the last  paragrap red
+    div.box p:nth-child(2) { background : #000000}// this will make the 2 nd paragrap red
+## psudu element slector 
+  <p>this is the tester element</p>
+    ::after     ::first-letter  ::selection
+    ::before    ::first-line    ::placeholder
+    p::first-letter { color = red } // this will make the first letter red
+
+
+
+
+# nav bar
+  nav ul li {
+    display: inline; // make in to columns other way is flex, grid
+    margin-right: 10px;
+  }
+
+# display              (https://www.youtube.com/watch?v=kIASoZjmCG0&t=450s)WsCube Tech
+
+            
+    ## display: none // to hide 
+ 
+    ## display: inline 
+      1. (li) make all of them in column,
+      2. make div to span span - this behave like text to make like div, why? 
+      3. in span width, margin ,padding don' t works 
+ 
+    ## display:block 
+      1. fix and make span to div, div breaks not span
+      2. Make div and margin, padding works 
+    
+    ## display:inline-block 
+      1. this will make like span in 1 line but width/margin works 
+      2. (imp : you can use the width/margin)
+    
+    ## display: list-item; 
+    makes the property as list, comes in new line, show the dot on the text, 
+      now you can use all the list property like list-style-position: inside;, 
+      and for span working as div 
+
+
 when we take margins/border/padding we need to decrease the height and width of the div.
 
 R 255

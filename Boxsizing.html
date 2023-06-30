@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      * {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .box {
+        width: 200px;
+        height: 200px;
+        padding: 20px;
+        border: 2px solid black;
+        background-color: lightgray;
+      }
+
+      /* 
+    Width:
+
+    Content width: 200px
+    Padding (left + right): 20px + 20px = 40px
+    Border (left + right): 2px + 2px = 4px
+    Total width: 200px (content) + 40px (padding) + 4px (border) = 244px
+    Height:
+
+    Content height: 200px
+    Padding (top + bottom): 20px + 20px = 40px
+    Border (top + bottom): 2px + 2px = 4px
+    Total height: 200px (content) + 40px (padding) + 4px (border) = 244px */
+      header {
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+      }
+
+      nav {
+        background-color: #f1f1f1;
+        padding: 10px;
+      }
+
+      nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      nav ul li {
+        display: inline;
+        margin-right: 10px;
+      }
+
+      section {
+        padding: 20px;
+      }
+
+      footer {
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to My Website</h1>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+
+    <section>
+      <h2>About Us</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla at lacus
+        nibh. Etiam blandit auctor dui id blandit.
+      </p>
+    </section>
+
+    <section>
+      <article>
+        <div class="box">
+          <h1>Box Content</h1>
+          <p>This is an example box.</p>
+        </div>
+      </article>
+    </section>
+
+    <footer>
+      <p>&copy; 2023 My Website. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

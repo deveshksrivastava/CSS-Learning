@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>JS Bin</title>
+    <style>
+      .box {
+        border: 1px solid red;
+        margin: 3px;
+      }
+
+      header logo-text {
+        background-color: red;
+        width: 400px;
+      }
+
+      nav > ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+      }
+
+      nav > ul > li {
+        list-style: none;
+        margin: 10px;
+      }
+
+      .box1 {
+        float: left;
+        width: 100%;
+        height: 100px;
+        background-color: grey;
+      }
+
+      .box2 {
+        float: left;
+        width: 100%;
+        background-color: lightblue;
+        height: 50px;
+      }
+
+      .submenu {
+        float: left;
+        width: 10%;
+        height: 100vh;
+      }
+
+      .box3 {
+        float: left;
+        width: 70%;
+        height: 100vh;
+        background-color: #ffcd19;
+      }
+
+      .box4 {
+        width: 15%;
+        float: right;
+        height: 100vh;
+        background-color: #94ec94;
+      }
+      .box5 {
+        position: fixed;
+        width: 100%;
+        bottom: 0px;
+        height: 100px;
+        background-color: grey;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div>
+      <div class="box box1">
+        <div class="header">
+          <h3>This is header</h3>
+          <img
+            class="logo"
+            src="https://cdn.trustpilot.net/brand-assets/1.1.0/logo-white.svg"
+            alt="Trustpilot reviews"
+            width="200px"
+            height="300px"
+          />
+          <h3 class="logo-text">Trust pilot</h3>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#Contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="box box2">menu bar</div>
+      <div class="box submenu">submenu</div>
+      <div class="box box3">article</div>
+      <div class="box box4">aside</div>
+      <div class="box box5">This is footer</div>
+    </div>
+  </body>
+</html>
