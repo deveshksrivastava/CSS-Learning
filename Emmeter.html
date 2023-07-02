@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <!-- div.class1 -->
+  <div class="class1"></div> // div.class1
+  <div class="class1"></div> //.class1
+
+  <!-- ID  -->
+  <div id="myID"></div> //div#myID
+
+  <!-- UL-li 5 --> //ul>li*5{hello}
+  <ul>
+    <li>hello 1</li>
+    <li>hello 2</li>
+    <li>hello 3</li>
+    <li>hello 4</li>
+    <li>hello 5</li>
+  </ul>
+  <!-- {} -->
+  div{"This is my div"}
+  <div>"This is my div"</div>
+
+  <!-- .item$*5{hello} -->
+  <div class="item1">hello</div>
+  <div class="item2">hello</div>
+  <div class="item3">hello</div>
+  <div class="item4">hello</div>
+  <div class="item5">hello</div>
+
+  <!-- Tag generation: Simply type the name of the tag and hit Tab. -->
+  div becomes <div></div>
+  span becomes <span></span>
+
+  <!-- Nesting elements: Use > to create a child element. -->
+  <div><span>Hello</span></div>
+
+
+  <!-- Multiplication: Use * to multiply elements. -->
+  <!-- li*10 -->
+
+  <!-- Custom attributes: Use [] for custom attributes. -->
+  <!-- a[href="#"] -->
+  <a href="#"></a>
+
+  +
+  <!-- 
+  <div>
+    <header></header>
+    <main></main>
+    <footer></footer>
+  </div> -->
+  <!-- Example of above div>header+main+footer> -->
+
+  ()
+  div>(header+main+footer)>
+  <div>
+    <header>Hello</header>
+    <main></main>
+    <footer></footer>
+  </div>
+
+  <!-- input -->
+  <!-- input:text -->
+  <input type="text" name="" id="">
+  <input type="button" value="">
+  <input type="checkbox" name="" id="">
+  <label for=""></label>
+
+  <!-- ^ climbing up -->
+  <!-- div>header>img{logo}+nav{SearchBar}>ui>li*4>a{home $}^^^^main>section>article>section{Display Video}+section{Display Description}^^aside>article*3^^footer{Display Footer Content} -->
+  <div>
+    <header>
+      <img src="" alt="">logo</img>
+      <nav>SearchBar
+        <ui>
+          <li><a href="">home 1</a></li>
+          <li><a href="">home 2</a></li>
+          <li><a href="">home 3</a></li>
+          <li><a href="">home 4</a></li>
+        </ui>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <article>
+          <section>Display Video</section>
+          <section>Display Description</section>
+        </article>
+      </section>
+      <aside>
+        <article></article>
+        <article></article>
+        <article></article>
+      </aside>
+    </main>
+    <footer>Display Footer Content</footer>
+  </div>
+
+  <!-- div.continer>header.header>img{logo}+nav.className{SearchBar}>ui>li*4>a{home $}^^^^main>section>article.artilce1>section{Display Video}+section{Display Description}^^aside.classAside>article*3^^footer{Display Footer Content} -->
+  <!-- https://www.skptricks.com/2018/02/youtube-like-template-layout-design-using-html5-and-css.html -->
+  <div class="continer">
+    <header class="header">
+      <img src="" alt="">logo</img>
+      <nav class="className">SearchBar
+        <ui>
+          <li><a href="">home 1</a></li>
+          <li><a href="">home 2</a></li>
+          <li><a href="">home 3</a></li>
+          <li><a href="">home 4</a></li>
+        </ui>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <article class="artilce1">
+          <section>Display Video</section>
+          <section>Display Description</section>
+        </article>
+      </section>
+      <aside class="classAside">
+        <article></article>
+        <article></article>
+        <article></article>
+      </aside>
+    </main>
+    <footer>Display Footer Content</footer>
+  </div>
+
+
+
+</body>
+</html>

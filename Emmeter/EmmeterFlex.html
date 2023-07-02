@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+
+    .continer {
+      border: 3px solid red;
+      min-height: 100vh;
+       /* two approch 1 is min-height and max-height: 100vh; overflow: scroll;*/
+      /* max-height: 100vh;
+      overflow: scroll; */
+      /* max-height: 80vh;
+      overflow: hidden;  */
+      /* this will hide all the content: ; */
+    }
+
+    main{
+      display: flex;
+      /* if we don't write below then also it works same */
+      /* flex-direction: row; */
+      width: 100%;
+      padding: 10px;
+      border: 10px solid #168912;
+      min-height: 100vh;
+    }
+
+    main > section {
+      margin: 5px;
+      border: 2px solid rgb(88, 18, 47);
+    }
+
+    main > aside {
+      margin: 5px;
+      border: 2px solid rgb(4, 0, 9);
+    }
+
+    .artilce1 > section {
+      margin: 5px;
+      border: 2px solid rgb(4, 0, 9);
+    }
+
+    .aside1 > article {
+      margin: 5px;
+      border: 2px solid rgb(4, 0, 9);
+    }
+
+    header {
+      display: flex;
+      /* flex-direction: row; */
+      /* justify-content:space-between; */
+      /* gap:20px; */
+      /* padding: 10px; */
+      /* 
+     
+      we removed and because in case of 3rd elemnet aligh will not work llike logout button after nav and used 
+      68  align-items: center;
+      .navclassName{
+         margin-left: auto; // this will push to the right
+      }
+      
+      */
+
+      align-items: center;
+      min-height: 5rem;
+      border: 1px solid rgb(34, 18, 88);
+      background-color: rgb(124, 211, 227);
+    }
+
+    .navclassName{
+      margin-left: auto; 
+    }
+
+    nav>ul{
+      display: flex;
+      flex-direction: row;
+      justify-content:center;
+      align-items:center;
+      gap:30px;
+      height: 80px;
+    }
+
+    nav>ul>li {
+      /* display: inline; old prop to make in 1 line*/
+
+      list-style-type: none;
+      text-decoration: none;
+    }
+
+    footer {
+      /* position: absolute;
+      bottom: 0; */
+      min-height: 5rem;
+      width: 100%;
+      border: 1px solid rgb(16, 85, 61);
+      background-color: rgb(158, 158, 158);
+    }
+
+    header {
+      top:200px
+    }
+   .logo{
+    border-radius: 50%;
+   }
+
+   .logo-text{
+    position: absolute;
+    top: 30px;
+    left: 15px;
+   }
+  
+  </style>
+</head>
+<body>
+   <div class="continer">
+    <header class="header">
+      <div class="image-logo">
+        <img src="http://placehold.it/70x70" class="logo" alt=""><div class="logo-text">LOGO</div></img>
+      </div>
+   
+      <!-- <div class="image-logo1">
+        <img src="http://placehold.it/70x70" class="logo1" alt=""><div class="logo-text1">LOGO</div></img>
+      </div> -->
+        <nav class="navclassName">
+          <ul>
+            <li><a href="">home 1</a></li>
+            <li><a href="">home 2</a></li>
+            <li><a href="">home 3</a></li>
+            <li><a href="">home 4</a></li>
+          </ul>
+        </nav>
+    </header>
+    <main>
+      <section>
+        <article class="artilce1">
+          <section>
+            <h2>Display Video</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero libero recusandae voluptates necessitatibus odit fugit maiores magnam commodi eos possimus?</p>
+          </section>
+          <section>
+            <h2>Display Description</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero libero recusandae voluptates necessitatibus odit fugit maiores magnam commodi eos possimus?</p>
+        
+          </section>
+        </article>
+      </section>
+      <aside class="aside1">
+         <article> 
+            <h2>article Video1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero libero recusandae voluptates necessitatibus odit fugit maiores magnam commodi eos possimus?</p>
+          </article>
+            <article>  <h2>article Video2</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero libero recusandae voluptates necessitatibus odit fugit maiores magnam commodi eos possimus?</p>
+          </article>
+            <article>  <h2>article Video3</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero libero recusandae voluptates necessitatibus odit fugit maiores magnam commodi eos possimus?</p>
+          </article>
+      </aside>
+    </main>
+    <footer>Display Footer Content</footer>
+  </div>
+
+
+
+</body>
+</html>

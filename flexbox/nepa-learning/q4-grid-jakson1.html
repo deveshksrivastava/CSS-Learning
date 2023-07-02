@@ -1,106 +1,103 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>JS Bin</title>
-  <style>
-    .container {
-      border: 1px solid green;
-      height: 600px;
-      display: grid;
-      /*  grid-template-columns: 1fr 1fr 1fr 1fr;      */
-      grid-template-columns: 100px 200px 100px 200px;
-
-      /*  grid-template-columns: repeat(4,1fr);  
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>JS Bin</title>
+    <style>
+      .container {
+        border: 1px solid green;
+        height: 600px;
+        display: grid;
+        /*  grid-template-columns: 1fr 1fr 1fr 1fr;      */
+        grid-template-columns: 100px 200px 100px 200px;
+        align-items: center;
+        /*  grid-template-columns: repeat(4,1fr);  
       grid-template-rows: 50px 400px 50px;   remove height */
-      /* 
+        /* 
       grid-row-gap: 40px; (old way)
       grid-column-gap: 40px; (old way) */
-      row-gap: 40px;
-      /*(new way) */
-      column-gap: 40px;
-      /*(new way) */
+        row-gap: 40px;
+        /*(new way) */
+        column-gap: 40px;
+        /*(new way) */
 
-      gap: 10px 20px;
-      padding: 10px;
+        gap: 10px 20px;
+        padding: 10px;
 
-      justify-content: start;
-      /* not work when we have 1fr in rid-template-columns */
-      align-content: end;
-      /* place-content: center space-between;  short cut of justify-content/align-content*/
-      /*  grid-template-areas: 
+        justify-content: start;
+        /* not work when we have 1fr in rid-template-columns */
+        align-content: end;
+        /* place-content: center space-between;  short cut of justify-content/align-content*/
+        /*  grid-template-areas: 
         "header header header header"
         "sidebar main main main "
         "footer footer footer footer"; */
-    }
+      }
 
-    .box {
-      border: 1px solid red;
-      width: 100px;
-    }
+      .box {
+        border: 1px solid red;
+        width: 100px;
+      }
 
-    .box1 {
-      background-color: blue;
-      /* grid-area: header; */
-      /*   
+      .box1 {
+        background-color: blue;
+        /* grid-area: header; */
+        /*   
       grid-column-start:1;
       grid-column-end:5; */
-      /* grid-column:span 4; */
-    }
+        /* grid-column:span 4; */
+      }
 
-    .box2 {
-      background-color: green;
-      /* grid-area: main; */
-    }
+      .box2 {
+        background-color: green;
+        /* grid-area: main; */
+      }
 
-    .box3 {
-      /* grid-area: sidebar; */
-    }
+      .box3 {
+        /* grid-area: sidebar; */
+      }
 
-    .box4 {
-      /* grid-area: footer; */
-      width: 100%;
-    }
+      .box4 {
+        /* grid-area: footer; */
+        width: 100%;
+      }
 
-    .box5 {
-      /* grid-column-start:1;
+      .box5 {
+        /* grid-column-start:1;
       grid-column-end:5; */
-      /* grid-column:span 4; */
-      /* grid-column: 2 / 3; start end */
-    }
+        /* grid-column:span 4; */
+        /* grid-column: 2 / 3; start end */
+      }
 
-    .box6 {}
+      .box6 {
+      }
 
-    /* .box7 {
+      /* .box7 {
         grid-column: -1 / -5;
         grid-column: 1 / 5;
         grid-column works deom -1 to -5 and 1 to 5
       
     } */
-  </style>
-</head>
+    </style>
+  </head>
 
-<body>
+  <body>
+    <div class="container">
+      <div class="box box1">Box 1</div>
+      <div class="box box2">Box 2</div>
+      <div class="box box3">
+        <p>Box 3</p>
+        <p></p>
+      </div>
 
-  <div class="container">
-    <div class="box box1">Box 1</div>
-    <div class="box box2">Box 2</div>
-    <div class="box box3">
-      <p>Box 3
-      <p>
+      <div class="box box4">Box 4</div>
+      <div class="box box5">Box 5</div>
+      <div class="box box6">Box 6</div>
+      <div class="box box7">Box 7</div>
+      <div class="box box8">Box 8</div>
+      <div class="box box9">Box 9</div>
+      <div class="box box10">Box 10</div>
     </div>
-    <div class="box box4">Box 4</div>
-    <div class="box box5">Box 5</div>
-    <div class="box box6">Box 6</div>
-    <div class="box box7">Box 7</div>
-    <div class="box box8">Box 8</div>
-    <div class="box box9">Box 9</div>
-    <div class="box box10">Box 10</div>
-
-  </div>
-
-</body>
-
+  </body>
 </html>

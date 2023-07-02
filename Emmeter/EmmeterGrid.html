@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        position: relative;
+      }
+      header {
+        display: grid;
+        align-items: center;
+        grid-template-columns: 1fr 1fr;
+        border: 2px solid rgb(255, 255, 0);
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 16px 10px -9px;
+      }
+
+      .hamburger {
+        display: none;
+      }
+
+      nav > ul {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+      }
+
+      nav > ul > li {
+        /* text-decoration: none; */
+        list-style-type: none;
+      }
+
+      nav > ul > li > a {
+        text-decoration: none;
+      }
+
+      figure {
+        height: 60px;
+        width: 60px;
+        position: relative;
+      }
+
+      figure img {
+        height: inherit;
+        width: inherit;
+        border-radius: 150px;
+      }
+
+      .logo-text {
+        position: absolute;
+        top: 12px;
+        left: 10px;
+      }
+
+      main {
+        min-height: 100vh;
+      }
+
+      main > section {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .left-section {
+        border: 2px solid red;
+      }
+
+      .right-section {
+        border: 2px solid blue;
+      }
+
+      @media (max-width: 600px) {
+        main > section {
+          display: grid;
+          grid-template-columns: 1fr;
+        }
+
+        nav {
+          display: none;
+        }
+
+        .hamburger {
+          display: inline-block;
+        }
+
+        .hamburger:hover {
+          /* background: red;
+          nav {
+            display: block;
+          } */
+        }
+      }
+
+      footer {
+        min-height: 80px;
+        background: grey;
+        /* position: fixed; */
+        /* bottom: 0;  insted we use main>  min-height: 100vh;*/
+        width: 100%;
+        border: 3px solid lightgreen;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- header>img+nav>ul>li*4>a[href="http://google.com"]{Home $}^^^^^main>section>article>(section{display Video}+section{Display Description})^aside>(article+article+articel)^^^footer{Display Footer Content} -->
+    <!-- header>img.logo+nav>ul>li*4>a[href="http://google.com"]{Home $}^^^^^main>section>article>(section>h2{display Video}+p>lorem^^section>h2{Display Description}+p>lorem)^aside>(article*3>lorem5)^^^footer{Display Footer Content} -->
+    <header>
+      <figure>
+        <img src="http://placehold.it/70x70" alt="" class="logo" />
+        <div class="logo-text">BMD LOGO</div>
+      </figure>
+      <nav>
+        <ul>
+          <li><a href="http://google.com">Home 1</a></li>
+          <li><a href="http://google.com">Home 2</a></li>
+          <li><a href="http://google.com">Home 3</a></li>
+          <li><a href="http://google.com">Home 4</a></li>
+        </ul>
+      </nav>
+
+      <nav class="hamburger">hamburger</nav>
+    </header>
+    <main>
+      <section>
+        <article class="left-section">
+          <section>
+            <h2>display Video</h2>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis
+              accusantium quo totam, animi accusamus suscipit, distinctio
+              nostrum consectetur nam ipsa mollitia et? Quas obcaecati itaque
+              quaerat adipisci distinctio nam doloribus?
+            </p>
+          </section>
+          <section>
+            <h2>Display Description</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quas
+              illo laudantium rem praesentium ea eligendi iure obcaecati
+              pariatur reiciendis accusantium nesciunt nisi repudiandae
+              dignissimos temporibus, dolore distinctio! Non, error.
+            </p>
+          </section>
+        </article>
+        <aside class="right-section">
+          <article>Lorem ipsum dolor sit amet.</article>
+          <article>Id architecto nihil natus ipsum!</article>
+          <article>A itaque tempora obcaecati voluptate.</article>
+        </aside>
+      </section>
+    </main>
+    <footer>Display Footer Content</footer>
+  </body>
+</html>
