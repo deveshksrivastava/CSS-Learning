@@ -15,9 +15,9 @@
       }
 
       .child1 {
-        position: relative;
-        /* position: absolute; */
-        left:10px;
+        position: absolute;
+        /* position: static; */
+        left:100px;
         background-color: lightblue;
         width: 170px;
         height: 70px;
@@ -27,8 +27,8 @@
       .child2 {
         /* position: absolute; */
         /* position: fixed; */
-        position: sticky;
-        top:5px;
+        position:static; 
+        top:165px;
         background-color: red;
         width: 70px;
         height: 70px;
@@ -41,9 +41,10 @@
         cursor:pointer;
 
         position:absolute;
-        /* top:250px;
+        /* 
+        top:250px;
         left:310px; */
-        bottom:50px;
+        bottom:150px;
         right:50px;
       }
     </style>

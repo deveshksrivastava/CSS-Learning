@@ -1,0 +1,40 @@
+{
+	"folders": [
+		{
+			"path": "../../LEARN-DEVOPS"
+		},
+		{
+			"path": "../../Swelte"
+		},
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../TechpledgeConsulting"
+		},
+		{
+			"path": "../../LEARN-NODE.JS"
+		},
+		{
+			"path": "../../LEARN-GIT"
+		},
+		{
+			"path": "../../LEARN-HEROKO/LearningProtal"
+		},
+		{
+			"path": "../../LEARN-HEROKO/portfolio"
+		},
+		{
+			"path": "../../LEARN-HEROKO/IOT"
+		},
+		{
+			"path": "../../LEARN - AWS-DEVOPS-KUBERNATIVE"
+		},
+		{
+			"path": "../../../Pradeep Project/ttustaging-master"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "CSS learning"
+	}
+}

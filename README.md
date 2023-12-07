@@ -2,10 +2,18 @@
 
 [Edit on StackBlitz ⚡️](https://stackblitz.com/edit/web-platform-dkqtho)
 
-# short cut
+1. Emiiter
+2. Selector
+3. display 
+Flex Box link
+4. Grid Link
+5. 
+
+# Emiiter (short cut)
 ```
 .box1 will create div with class="box1"
 #box1 will create div with ID="box1"
+
 div>ul>li*3>lorem1
 bd+ gives border
 
@@ -97,7 +105,9 @@ check in the psudocode.html file
   }
  
  // this will make the first 2 elements red
-  input[type="text"] { border: 1px solid #000000 }
+  input[type="text"] { 
+    border: 1px solid #000000 
+    }
 ```
 
 ## psudu slector 
@@ -131,7 +141,52 @@ check in the psudocode.html file
     p::first-letter { color = red } // this will make the first letter red
 ```
 
+# display              
+WsCube Tech-(https://www.youtube.com/watch?v=kIASoZjmCG0&t=450s)
+MDN https://developer.mozilla.org/en-US/docs/Web/CSS/display check example
 
+            
+## display: none    (TO HIDE) 
+ 
+  ### display: inline  (ONE SINGLE LINE, DIV->SPAN, WITHOUT MARGIN)
+    1. (li) make all of them in column (ONE SINGLE LINE)
+    2. make **div** to **span** span - this behave like text to make like div, why? 
+    3. in span WIDTH/MARGIN DON'T WORKS
+    note - this can also be done with display:flex, but can be changed with flex-direction:column
+
+  ### display:block   (SPAN -> DIV, WITH MARGIN)
+    1. fix and make **span** to **div**,
+    2. This makes in 2 line 
+    3. div breaks not span
+    2. Make div and margin, padding works 
+    
+  ### display:inline-block 
+    1. this will make like span in 1 single line but width/margin works 
+    2. (imp : you can use the width/margin)
+  
+  ### display: list-item; 
+    1. makes the property as list, comes in new line, show the dot on the text, 
+    2. now you can use all the list property like list-style-position: inside;, 
+        and for span working as div 
+
+# Flex Box
+ {BASIC FLEX BOX 1} [https://www.freecodecamp.org/news/learn-css-flexbox-in-5-minutes-b941f0affc34/]
+ {Crash Course}[https://www.freecodecamp.org/news/learn-css-flexbox/]
+ {flexbox all}[https://www.freecodecamp.org/news/tag/flexbox/]
+ (FlexBox Best)[https://www.freecodecamp.org/news/learn-flexbox-common-use-cases/]
+
+# CSS GRID
+1. (CSS Grid Tutorial with Cheat Sheet)[https://www.freecodecamp.org/news/css-grid-tutorial-with-cheatsheet/]
+
+2. (https://www.freecodecamp.org/news/css-grid-tutorial-with-cheatsheet/)[https://www.freecodecamp.org/news/complete-guide-to-css-grid/]
+
+3. (CSS GRID ALL)[https://www.freecodecamp.org/news/tag/css-grid/]
+
+4. (Learn CSS Grid by Building 5 Layouts in 17 minutes)[https://www.freecodecamp.org/news/learn-css-grid-by-building-5-layouts/]
+
+5. (Learn CSS Grid in 5 minutes - A tutorial for beginners)[https://www.freecodecamp.org/news/learn-css-grid-in-5-minutes-f582e87b1228/]
+
+6. (A Beginner’s Guide to CSS Grid){https://www.freecodecamp.org/news/a-beginners-guide-to-css-grid-3889612c4b35/}
 
 # nav bar in one direction
 ```
@@ -140,33 +195,7 @@ check in the psudocode.html file
     margin-right: 10px;
   }
 ```
-# display              
-WsCube Tech-(https://www.youtube.com/watch?v=kIASoZjmCG0&t=450s)
-MDN https://developer.mozilla.org/en-US/docs/Web/CSS/display check example
 
-            
-    ## display: none    (TO HIDE) 
- 
-    ## display: inline  (ONE SINGLE LINE, DIV->SPAN, WITHOUT MARGIN)
-      1. (li) make all of them in column (ONE SINGLE LINE)
-      2. make **div** to **span** span - this behave like text to make like div, why? 
-      3. in span WIDTH/MARGIN DON'T WORKS
-      note - this can also be done with display:flex, but can be changed with flex-direction:column
- 
-    ## display:block   (SPAN -> DIV, WITH MARGIN)
-      1. fix and make **span** to **div**,
-      2. This makes in 2 line 
-      3. div breaks not span
-      2. Make div and margin, padding works 
-     
-    ## display:inline-block 
-      1. this will make like span in 1 single line but width/margin works 
-      2. (imp : you can use the width/margin)
-    
-    ## display: list-item; 
-      1. makes the property as list, comes in new line, show the dot on the text, 
-      2. now you can use all the list property like list-style-position: inside;, 
-         and for span working as div 
 
 
 when we take margins/border/padding we need to decrease the height and width of the div.
