@@ -3,7 +3,7 @@ CSS Learning
 ### [Postion](https://twitter.com/Prathkum/status/1367469980527255554/photo/1)  
   - Static - Default, goes by the page flow, top to bottom 
   - Relative 
-          - simmiler like static, but allow to change by right,left,top,bottom
+          - simmiler like static, but allow to change by right,left,top,bottom and z-index
           - Remove from the document flow
           .child {
               postion:relative;
