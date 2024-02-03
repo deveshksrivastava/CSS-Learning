@@ -22,9 +22,8 @@ CSS Learning
          - fixed + relativw
          - parent relative, child- fixed, stick to the postion, and always show even when we scroll down.
 ### FlexBox
-  - Continer & Items
-
-  - Continer
+    - Continer & Items
+    - Continer
           - based on main axis(row) and cross access(Column)
           - create 1 div continer and insied 4 items
           .container {
