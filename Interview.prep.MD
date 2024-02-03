@@ -21,13 +21,14 @@ CSS Learning
   - Sticky
          - fixed + relativw
          - parent relative, child- fixed, stick to the postion, and always show even when we scroll down.
-### FlexBox
+### [FlexBox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
     - Continer & Items
     - Continer
           - based on main axis(row) and cross access(Column)
           - create 1 div continer and insied 4 items
           .container {
               disply: flex;
+              flex-direction: row | row-reverse | column | column-reverse;  (to make row or coll)
               justify-contect: center;  //space-around (x-axis)
               align-item: flex-start/center; //(cross-axis)
               align-contect: center; //rarely used, used for multiline
