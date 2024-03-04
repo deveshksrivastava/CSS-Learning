@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
     <title>Document</title>
     <script>
       tailwind.config = {
@@ -23,7 +27,7 @@
             // => @media (min-width: 768px) { ... } tablet
 
             lg: '1024px',
-            // => @media (min-width: 1024px) { ... } laptop 13inch, 
+            // => @media (min-width: 1024px) { ... } laptop 13inch,
             // lg:text-center this work in xl and 2xl also not below
 
             xl: '1280px',
@@ -44,19 +48,12 @@
     </style>
   </head>
   <body>
-    <h1 class="text-3xl text-orange-700 font-bold underline text-center">
-      Hello world!
-    </h1>
-    <h2 class="text-mycolorblue">This is my color</h2>
-    <h2 class="text-mycolorgreen">
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis
-      assumenda corporis obcaecati deserunt adipisci sit. Animi ipsam rem nihil
-      corrupti repellendus perspiciatis illum minus unde mollitia, temporibus
-      quos, harum doloribus!
-    </h2>
-
-    
-    </p>
-    
+    <div class="navbar bg-red-400 flex justify-between items-center p-4">
+      <div class="inline-block p-4">
+        <div class="h-2 w-6 bg-red-400 p-4">sdsdsd</div>
+        <div class="h-2 w-6 bg-red-400 p-4">sdsdsd</div>
+        <div class="h-2 w-6 bg-red-400 p-4">sdsd</div>
+      </div>
+    </div>
   </body>
 </html>
